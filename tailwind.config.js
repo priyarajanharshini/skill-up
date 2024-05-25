@@ -39,7 +39,11 @@ module.exports = {
         
         boxShadow: {
           '3xl': '#000000',
+          'custom': 'shadow-custom shadow-lg',
         },
+        lineHeight: {
+            'custom': '67.2px',
+          },
         width: {
             hug: '236px',
             '1240':'1240',
@@ -57,7 +61,8 @@ module.exports = {
          
           borderRadius: {
             '16': '16px',
-            'x1':'40px'
+            'x1':'40px',
+            'custom': '32px',
           },
           gap: {
             '10': '10px',
