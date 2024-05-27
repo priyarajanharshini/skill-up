@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
+// import GetStarted from './component/GetStarted';
 // import './App.css';
-// import 'tailwindcss/tailwind.css';
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -27,11 +28,13 @@
 import React from "react";
 import 'tailwindcss/tailwind.css';
 import Hii from './whyus';
+import GetStarted from './component/GetStarted'
 function App(){
   return(
     <>
     <Hii/>
+    <GetStarted/>
     </>
   )
 }
-export default App;
+ export default App;
