@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 // import GetStarted from './component/GetStarted';
 // import './App.css';
-
 // function App() {
 //   return (
 //     <div className="App">
@@ -28,11 +27,13 @@
 import React from "react";
 import 'tailwindcss/tailwind.css';
 import Hii from './whyus';
+import Glimb from "./Component/glimb";
 import GetStarted from './component/GetStarted'
 function App(){
   return(
     <>
     <Hii/>
+    <Glimb/>
     <GetStarted/>
     </>
   )

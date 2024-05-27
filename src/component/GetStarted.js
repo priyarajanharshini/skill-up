@@ -1,6 +1,6 @@
 import React from "react"
-import  lefthand from "../image/lefthand.svg";
-import righthand from "../image/righthand.svg"
+import lefthand from "../Images/lefthand.svg";
+import righthand from "../Images/righthand.svg"
 
 
 const GetStarted  = () => {
