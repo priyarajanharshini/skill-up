@@ -167,7 +167,7 @@ function Glimb() {
             </h3>
           </div>
           <div
-           className=" flex flex-wrap justify-center gap-4 mt-10 p-2">
+           className=" flex flex-wrap justify-center gap-4 mt-10 p-0">
             {glimb.map((card, index) => (
               <div
                 key={index}
