@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
     purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     content: ["./src/**/*.{html,js}"],
@@ -20,11 +19,7 @@ module.exports = {
                 'roboto': ['"roboto"'],
                 'nunito': ['"nunito"'],
                 'clash': ['"Clash Display"', 'sans-serif'],
-                'arial': ['Arial', 'sans-serif'],
-                'display': ['Oswald'],
-                'body': ['"Open Sans"'],
-                'outfit': ['Outfit', 'sans-serif'], 
-                'sans': ['Outfit', 'ui-sans-serif', 'system-ui'],
+              
             },
             boxShadow: {
                 '3xl': '#000000',

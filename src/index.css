@@ -18,8 +18,3 @@ code {
 @tailwind utilities;
 
 
-@layer base {
-  body {
-    @apply font-outfit text-base font-light leading-relaxed text-left;
-  }
-}
