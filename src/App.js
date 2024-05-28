@@ -3,6 +3,9 @@ import './App.css';
 import 'tailwindcss/tailwind.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Things from './Components/Things';
+import Hii from './whyus';
+import Glimb from "./Component/glimb";
+import GetStarted from './component/GetStarted'
 
 
 
@@ -12,28 +15,16 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<Things />}></Route>
-          
+          <Route path="/Things" element={<Things />}></Route>
+          <Route path="/Hii" element={<Hii />}></Route>
+          <Route path="/Glimb" element={<Glimb />}></Route>
+          <Route path="/GetStarted" element={<GetStarted />}></Route>
+
         </Routes>
       </BrowserRouter>
     </div>
   );
 }
 
-// export default App;
 
-import React from "react";
-import 'tailwindcss/tailwind.css';
-import Hii from './whyus';
-import Glimb from "./Component/glimb";
-import GetStarted from './component/GetStarted'
-function App(){
-  return(
-    <>
-    <Hii/>
-    <Glimb/>
-    <GetStarted/>
-    </>
-  )
-}
- export default App;
+export default App;
