@@ -107,6 +107,7 @@ module.exports = {
       boxShadow: {
         '3xl': '#000000',
         'custom': 'shadow-custom shadow-lg',
+        'custom-': '0px 0px 16px 0px #C7C7C7',
       },
       lineHeight: {
         'custom': '67.2px',
