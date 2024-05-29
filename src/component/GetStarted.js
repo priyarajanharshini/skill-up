@@ -19,8 +19,8 @@ const GetStarted  = () => {
           Get Started
         </button>
       </div>
-      <img className=" absolute w-[200px] h-[300px] right-[0px] top-[20px] "src={righthand}/>
-      <img className="absolute w-[177px] h-[229px] top-[333px] left-[70px]" src={lefthand}/>
+      <img className=" absolute w-[200px] h-[300px] right-[0px] top-[20px] "src={righthand} alt="Righthand"/>
+      <img className="absolute w-[177px] h-[229px] top-[333px] left-[70px]" src={lefthand} alt="Lefthand"/>
       </div>    
       </>
     );

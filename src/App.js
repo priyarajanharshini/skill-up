@@ -1,13 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import 'tailwindcss/tailwind.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Things from './Components/Things';
 import Hii from './whyus';
 import Glimb from "./Component/glimb";
-import GetStarted from './component/GetStarted'
-
-
+import GetStarted from './Component/GetStarted'
 
 function App() {
   return (
