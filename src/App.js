@@ -8,6 +8,7 @@ import GetStarted from './Component/GetStarted';
 import Topbar from './Component/Topbar';
 import Home from './Component/Home';
 import AboutUs from'./Component/AboutUs';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           
           </Routes>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }

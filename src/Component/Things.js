@@ -28,7 +28,7 @@ function Things() {
         {questions.map((question, index) => (
           <div
             key={index}
-            className="group flex items-center  justify-between  gap-0 rounded-3xl  divide-solid   hover:border-white p-7  hover:bg-white font-Arial sans-serif text-base shadow-custom mx-auto mb-[20px] max-w-[85%] "
+            className="group flex items-center  justify-between  gap-0 rounded-3xl  divide-solid   hover:border-white p-7  hover:bg-white font-Arial sans-serif text-base shadow-custom-box mx-auto mb-[20px] max-w-[85%] "
           >
             <p className="font-clash   text-xl  font-bold  leading-7  text-center p-3" >
               {question}
