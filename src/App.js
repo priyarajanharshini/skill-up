@@ -7,6 +7,7 @@ import Glimb from "./Component/glimb";
 import GetStarted from './Component/GetStarted';
 import Topbar from './Component/Topbar';
 import Home from './Component/Home';
+import AboutUs from'./Component/AboutUs';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Glimb" element={<Glimb />}></Route>
           <Route path="/GetStarted" element={<GetStarted />}></Route>
           <Route path="/Home" element={<Home />}></Route>
+          <Route path="/AboutUs" element={<AboutUs/>}></Route>
           
           </Routes>
       </BrowserRouter>
