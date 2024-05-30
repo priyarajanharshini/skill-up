@@ -3,7 +3,7 @@ import lefthand from "../Images/lefthand.svg";
 import righthand from "../Images/righthand.svg"
 
 
-const GetStarted  = () => {
+const GetStarted = () => {
   
     return (
       <>
