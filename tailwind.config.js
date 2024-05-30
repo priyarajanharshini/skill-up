@@ -57,8 +57,8 @@ module.exports = {
       },
       textColor: {
         "lightgray": "#808080",
-        'black': '#222222'
-
+        'black': '#222222',
+        'sky-blue':'#0075FF',
       },
       backgroundColor: theme => ({
         'blue': {
