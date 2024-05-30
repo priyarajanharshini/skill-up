@@ -16,7 +16,7 @@ function App() {
 
         <Routes>
           <Route path="/Things" element={<Things />}></Route>
-          <Route path="/Hii" element={<Hii />}></Route>
+          <Route path="/Hii" element={<Hii/>}></Route>
           <Route path="/Glimb" element={<Glimb />}></Route>
           <Route path="/GetStarted" element={<GetStarted />}></Route>
           <Route path="/Home" element={<Home />}></Route>
