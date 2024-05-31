@@ -1,6 +1,7 @@
 import React from "react";
 import PYTHON from '../Icons/python.svg'
 import Frame from '../Icons/Frame.svg';
+import Frame1 from '../Icons/Frame1.svg';
 import FLUTTER from '../Icons/FLUTTER.svg';
 import react from '../Icons/react.svg';
 import JAVA from '../Icons/JAVA .svg';
@@ -17,17 +18,11 @@ function Home() {
                             <span className="text-black font-medium text-sm md:text-lg lg:text-lg leading-8 flex-grow flex items-center justify-center">
                                 Top Courses by Top Mentors
                             </span>
-                            <img className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 sm:hidden md:hidden" src={Frame} alt="Frame" />
-                        </button>
-                        {/* <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md h-14 lg:h-[60px] bg-white-500 text-black border border-gray-500 font-bold rounded-full flex items-center space-x-2 px-4 md:px-8 lg:px-12">          
-    <span className="text-black font-medium text-sm md:text-base lg:text-lg leading-8 flex-grow flex items-center justify-center">
-        Top Courses by Top Mentors
-    </span>
-    <div className="relative w-16 h-16 sm:w-20 sm:h-20 lg:w-12 lg:h-12 overflow-hidden">
-        <img className="absolute left-0 top-0 left-[-45%] w-full h-full object-cover" src={Frame} alt="Frame" />
-    </div>
-</button> */}
 
+                            <img className="w-10 h-10 hidden sm:hidden md:hidden lg:block" src={Frame1} alt="Frame1" />
+                            <img className="w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 lg:w-24 lg:h-24 lg:hidden" src={Frame} alt="Frame" />
+
+                        </button>
                     </div>
                     <div className="relative">
                         <div className="absolute top-18 left-3.5 inset-y-0  lg:-top-16 lg:left-16 md:left-10 md:-top-12 sm:-top-16">
