@@ -229,7 +229,6 @@ function Topbar() {
     <>
       <div className="container mx-auto mt-3">
         <nav className="bg-gray-100 xs:bg-white xs:rounded-2xl xs:w-11/12 ">
-          {/* <nav className="bg-gray-100 "> xs la mattum navbar ku w-11/12 apply aganum md,sm,lg ku vendam */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:px-6">
             <div className="relative flex h-20 items-center justify-between">
               <div className="flex items-center">
