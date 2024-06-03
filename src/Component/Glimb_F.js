@@ -129,6 +129,7 @@ function Glimb() {
             <h3 className="text-center clash font-semibold text-5xl">
               Our <span className="text-blue-600 clash">Popular Courses</span>
             </h3>
+            
           </div>
           <div className="flex flex-wrap gap-8 mt-10 md:px-24 justify-center">
             {cards.map((card, index) => (
