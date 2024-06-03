@@ -10,18 +10,16 @@ function Home() {
 
     return (
         <>
-            <div className="container mx-auto  mt-3">
+            <div className="container mx-auto mt-4">
 
-                <div className="mx-auto  mt-12 sm:mt-20 md:mt-20 lg:mt-20    text-center">
+                <div className="mx-auto  mt-12 sm:mt-20 md:mt-20 lg:mt-20  text-center">
                     <div className="flex justify-center mb-4">
-                        <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md h-14 bg-white-500 text-black border border-gray-500 font-bold rounded-full flex items-center space-x-2 px-4 md:px-8 lg:px-12">
-                            <span className="text-black font-medium text-sm md:text-lg lg:text-lg leading-8 flex-grow flex items-center justify-center">
+                        <button className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-md h-14 bg-white-500 text-black border border-gray-500 font-bold rounded-full flex items-center justify-between px-4 sm:px-8 md:px-8 lg:px-12">
+                            <span className="text-black font-medium text-sm md:text-lg lg:text-lg leading-8">
                                 Top Courses by Top Mentors
                             </span>
-
-                            <img className="w-10 h-10 hidden sm:hidden md:hidden lg:block" src={Frame1} alt="Frame1" />
-                            <img className="w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 lg:w-24 lg:h-24 lg:hidden" src={Frame} alt="Frame" />
-
+                            <img className="w-10 h-10 hidden sm:block md:hidden lg:hidden" src={Frame1} alt="Frame1" />
+                            <img className="w-16 h-16 sm:w-20 sm:h-20 md:w-20 md:h-20 lg:w-24 block lg:h-24 lg:block md:block sm:hidden " src={Frame} alt="Frame" />
                         </button>
                     </div>
                     <div className="relative">
@@ -58,7 +56,7 @@ function Home() {
 
                     </div>
                     <div className=" mt-7">
-                        <button className="bg-blue-500  text-white text-xl py-2 px-4 rounded-md text-sm w-[236px] h-[66px]">
+                        <button className="bg-blue-500  text-white text-xl py-2 px-4 rounded-xl text-sm w-60 min-h-16">
                             Get Started
                         </button>
                     </div>
@@ -66,38 +64,36 @@ function Home() {
                 </div>
 
 
-                <div class="container mx-auto mt-10 px-4 sm:px-6 md:px-8">
-                    <div class="flex flex-wrap justify-center -mx-4">
-                        <div class="w-full flex flex-wrap justify-center -mx-4 mb-10">
-                            <div class="w-full lg:w-1/3 px-4 mb-8">
-                                <div class="border border-white shadow-lg rounded-3xl p-0.5">
-                                    <div class="bg-[#CEEAFF] p-6 rounded-3xl mx-auto text-center shadow-sm">
-                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5">15,635+</p>
-                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5">students enrolled</p>
+                <div class="container mx-auto mt-24 px-4 sm:px-6 md:px-8">
+                    <div class="flex flex-wrap justify-center -mx-2">
+                        <div class="w-full flex flex-wrap justify-center -mx-2 mb-10">
+                            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-2 mb-8">
+                                <div class="border border-gray-100 shadow-lg rounded-3xl p-0.5">
+                                    <div class="bg-[#e7f4ff] p-6 rounded-3xl mx-auto text-center shadow-sm h-40">
+                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5 pb-2">15,635+</p>
+                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5 pt-2">students enrolled</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="w-full lg:w-1/3 px-4 mb-8">
-                                <div class="border border-white shadow-lg rounded-3xl p-0.5">
-                                    <div class="bg-[#CEEAFF] p-6 rounded-3xl mx-auto text-center shadow-sm ">
-                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5">60+</p>
-                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5">best selling courses</p>
+                            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-2 mb-8">
+                                <div class="border border-gray-100 shadow-lg rounded-3xl p-0.5">
+                                    <div class="bg-[#e7f4ff] p-6 rounded-3xl mx-auto text-center shadow-sm h-40">
+                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5 pb-2">60+</p>
+                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5 pt-2">best selling courses</p>
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="w-full lg:w-1/3 px-4 mb-8">
-                                <div class="border border-white shadow-lg rounded-3xl p-0.5">
-                                    <div class="bg-[#CEEAFF] p-6 rounded-3xl mx-auto text-center shadow-sm">
-                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5">200+</p>
-                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5">expert Instructors</p>
+                            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-2 mb-8">
+                                <div class="border border-gray-100 shadow-lg rounded-3xl p-0.5">
+                                    <div class="bg-[#e7f4ff] p-6 rounded-3xl mx-auto text-center shadow-sm h-40">
+                                        <p class="font-display text-5xl font-semibold leading-72 text-left pl-5 pb-2">200+</p>
+                                        <p class="font-display text-base font-medium leading-6 text-left text-gray-600 pl-5 pt-2">expert Instructors</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
 
