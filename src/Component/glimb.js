@@ -134,7 +134,7 @@ function Glimb() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="flex-grow w-full sm:w-1/2 lg:w-1/3 md:w-1/3  p-4 shadow-xl rounded-lg overflow-hidden border-2 border-white"
+                className=" p-4 shadow-xl rounded-lg overflow-hidden border-2 border-white sm:flex-100 md:flex-33 lg:flex-33"
                 style={{ backgroundColor: "#F6F6F6" }}
               >
                 <div className="">
@@ -169,11 +169,11 @@ function Glimb() {
 
             </h3>
           </div>
-          <div className="flex flex-wrap gap-4 mt-6 p-6 justify-center">
+          <div className="flex flex-wrap gap-8 mt-10 md:px-24 justify-center">
             {glimb.map((card, index) => (
               <div
                 key={index}
-                className="shadow-xl rounded-lg overflow-hidden border-2 border-white  p-4 lg:flex-1 sm:w-1/2 md:w-1/3 lg:w-1/3"
+                className="shadow-xl rounded-lg overflow-hidden border-2 border-white  p-4  sm:flex-100 md:flex-33 lg:flex-25"
                 style={{ backgroundColor: "#F6F6F6" }}
               >
                 <div className="h-64 overflow-hidden">
@@ -199,7 +199,7 @@ function Glimb() {
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-0">
+          <div className="flex justify-center mt-4">
             <button className="bg-blue-500 text-white py-5 px-9 rounded" onClick={handleViewAllClick}>
               {showMore ? '' : 'View All'}
             </button>
@@ -210,4 +210,4 @@ function Glimb() {
   );
 }
 
-export default Glimb;
+export default Glimb; 
