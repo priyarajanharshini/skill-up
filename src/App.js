@@ -3,7 +3,7 @@ import 'tailwindcss/tailwind.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Things from './Component/Things';
 import Hii from './Component/whyus';
-import Glimb from './Component/Glimb_F';
+import Glimb from './Component/Glimb';
 import GetStarted from './Component/GetStarted';
 import Topbar from './Component/Topbar';
 import Home from './Component/Home';
