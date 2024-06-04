@@ -2,8 +2,10 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="bg-black">
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+        <footer className="bg-black mt-14">
+            <div className="mx-auto  max-w-screen-xl p-14 py-6 lg:py-8 ">
+            
+           
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <h3 className="font-clash self-center text-3xl text-left font-semibold text-white leading-9">Logo</h3>
@@ -30,7 +32,7 @@ function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="font-clash mb-6 text-xl font-semibold  text-white">Help</h2>
+                            <h2 className="font-clash mb-6 text-xl font-semibold  text-white leading-8">Help</h2>
                             <ul className="text-white font-sans text-base font-light leading-6">
                                 <li className="mb-4">
                                     <a className="">Contact</a>
@@ -48,7 +50,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <hr className="my-6 sm:mx-auto lg:my-6 border-custom-border" />
+                <hr className="my-6 sm:mx-auto lg:my-6 border-custom-gray" />
 
                 <div className="flex w-full flex-col items-center justify-center  md:flex-row md:justify-between">
                     <span className="text-white font-sans text-base font-light leading-6">
