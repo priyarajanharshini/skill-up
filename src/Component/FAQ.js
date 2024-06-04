@@ -1,0 +1,71 @@
+import React, { useState } from "react";
+
+function FAQ() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const questions = [
+    "Can I collaborate effectively with my peers?",
+    "How can I check for understanding?",
+    "What open-ended creation tools are available?",
+    "How can I check for understanding?",
+    "Is the platform user-friendly?"
+  ];
+
+  const answers = [
+    "Yes, the platform includes various tools to enhance collaboration such as shared workspaces, live chats, and real-time document editing.",
+    "To check for understanding, you can use interactive quizzes, feedback forms, and progress tracking features available on the platform.",
+    "There are multiple open-ended creation tools such as customizable templates, media upload options, and project-based learning modules.",
+    "You can check for understanding through quizzes, assignments, and interactive activities that provide instant feedback.",
+    "Yes, the platform is designed to be intuitive and user-friendly, with easy navigation, help guides, and customer support."
+  ];
+
+  const handleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  return (
+    <div className="Things">
+      <div className="heading">
+        <p className="font-clash text-4xl font-extrabold text-center my-14 text-custom-gray sm:text-3xl md:text-5xl">
+          <span className="pb-2 inline-block mb-1">Things, you</span>
+          <br />
+          <span>may wonder:</span>
+          <span className="text-blue-600/100">
+            FAQ<span>s</span>
+          </span>
+        </p>
+      </div>
+
+      <div className="pt-7 mb-16">
+        {questions.map((question, index) => (
+          <div
+            key={index}
+            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-Arial sans-serif text-base shadow-custom-box mx-auto mb-[20px] max-w-[85%] ${
+              expandedIndex === index ? "border  bg-white" : "hover:border-white hover:bg-white"
+            }`}
+          >
+            <div className="flex items-center justify-between w-full">
+              <p className="font-clash text-2xl font-bold leading-7 text-center p-3">
+                {question}
+              </p>
+              <p
+                className="text-2xl font-bold leading-7 text-center p-3 cursor-pointer"
+                onClick={() => handleExpand(index)}
+              >
+                {expandedIndex === index ? "-" : "+"}
+              </p>
+            </div>
+            {expandedIndex === index && (
+              <div className="font-clash text-lg font-semibold leading-7 pl-9 p-3">
+                {answers[index]}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default FAQ;
+
