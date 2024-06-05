@@ -5,6 +5,11 @@ import Frame1 from '../Icons/Frame1.svg';
 import FLUTTER from '../Icons/FLUTTER.svg';
 import react from '../Icons/react.svg';
 import JAVA from '../Icons/JAVA .svg';
+import Glimb from "./Glimb";
+import WhyUs from "./whyus";
+import FAQ from "./FAQ";
+import GetStarted from "./GetStarted";
+import { Fa0 } from "react-icons/fa6";
 
 function Home() {
 
@@ -97,7 +102,10 @@ function Home() {
                 </div>
 
 
-
+            <WhyUs />
+            <Glimb />
+            <FAQ />
+            <GetStarted />
 
             </div>
         </>
