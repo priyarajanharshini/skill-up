@@ -16,33 +16,20 @@ module.exports = {
         "card-green": '#F2FFED',
         "gray-color": '#cccccc',
         'custom-black': '#171717',
-       
-      },
-      fontFamily: {
-        'clash': ['"Clash Display"', 'sans-serif'],
-        'roboto': ['"Roboto"', 'sans-serif'],
-        'nunito': ['"Nunito"', 'sans-serif'],
-        'clash-display': ['Clash Display', 'sans-serif'],
-        'outfit': ['Outfit', 'sans-serif'],
-        'satisfy': ['Satisfy', 'cursive'],
-
-      },
-      fontSize: {
-        'custom-56': ['56px', {
-          lineHeight: '67.2px',
-        }],
-        'custom-26': ['26px', {
-          lineHeight: '32px',
-        }]
-      },
-      fontWeight: {
-        '600': 600,
-        '300': 300
-      },
-      colors: {
         'custom-white': 'rgba(255, 255, 255, 1)',
       },
-
+      fontFamily: {
+        'clash': ['"ClashDisplay"', 'sans-serif'],
+        'roboto': ['"Roboto"', 'sans-serif'],
+        'nunito': ['"Nunito"', 'sans-serif'],
+        'clash-display': ['"ClashDisplay"', 'sans-serif'],
+        'outfit': ['"Outfit"', 'sans-serif'],
+        'satisfy': ['Satisfy', 'cursive'],
+      },
+      fontSize: {
+      },
+      fontWeight: {
+      },
 
       boxShadow: {
         '3xl': '#000000',
@@ -50,13 +37,11 @@ module.exports = {
         'custom-box': '0px 0px 16px 0px #C7C7C7',
       },
       lineHeight: {
-        'custom': '67.2px',
       },
       borderRadius: {
-        '16': '16px',
-        'x1': '40px',
-        'custom': '32px',
-        '40': "40px"
+        '16px': '16px',
+        '32px': '32px',
+        '40px': "40px",
       },
       textColor: {
         "lightgray": "#808080",
@@ -70,53 +55,59 @@ module.exports = {
         },
         'custom-black': { '500': '#171717' },
         'custom-gray': '#F7F7F7',
-       
+
       }
       ),
       gap: {
-        "12": "12px",
-        '10': '10px',
+        '12px': '12px',
+        '10px': '10px',
       },
       opacity: {
-        '100': '100',
+        '100px': '100px',
       },
       height: {
-        hug: '76px',
-        "178": "178px",
-        '562': '562',
-        '134': '134',
-        "600": "600px",
-        '380px': '380px'
+        '114px': '114px',
+        '150px': '150px',
+        '172px': '172px',
+        '200px': '200px',
+        '230px': '230px',
       },
       width: {
-        hug: '236px',
-        "462": "462px",
-        "478": "478px",
-        '1240': '1240',
-        '943': '943',
-        "600": "600px",
-        '520px': '520px',
-        "1198px":"1198px",
-      },
+        '88px': '88px',
+        '110px': '110px',
+        '133px': '133px',
+        '150px': '150px',
+        '170px': '170px',
+        '210px': '210px',
 
+
+      },
       padding: {
-        '60': '60px',
-        '24': '24px',
+        '16px': '16px',
+        '24px': '24px',
+        '60px': '60px',
+        '75px': '75px',
+        '120px': '120px',
+      },
+      margin: {
+        '120px': '120px',
+        '50px': '50px'
+      },
+      spacing: {
+        '16': '70px',
+        '19': '75px'
       },
       borderColor: {
-        
         'custom-gray': '#D9D9D966',
       },
       inset: {
         '40px': '40px',
         '680px': '680px',
       },
-
       flex: {
-        '100': '1 1 100%',
-        '33': '0 0 33.3333%',
         '25': '0 0 25%',
-      
+        '33': '0 0 33.3333%',
+        '100': '1 1 100%',
       },
 
     },
@@ -125,7 +116,8 @@ module.exports = {
         flex: ['responsive'],
       },
     },
-    plugins: [],
+    plugins: [
+    ],
 
   },
 }
