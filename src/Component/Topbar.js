@@ -10,7 +10,7 @@ function Topbar() {
 
   return (
     <>
-      <div className="container mx-auto mt-3">
+      <div className="container mx-auto mt-6">
         <nav className="bg-gray-100 xs:bg-white rounded-2xl xs:w-11/12 ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
@@ -19,13 +19,13 @@ function Topbar() {
               </div>
               <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
                 <div>
-                  <a href="#" className="text-blue-500 px-3 py-2 text-lg font-semibold leading-7 no-underline font-clash text-base lg:text-xl lg:leading-7">
+                  <a href="#" className="text-blue-500 px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
                     Home
                   </a>
-                  <a href="#" className="text-black px-3 py-2 text-lg font-semibold leading-7 no-underline font-clash text-base lg:text-xl lg:leading-7">
+                  <a href="#" className="text-black px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
                     Courses
                   </a>
-                  <a href="#" className="text-black px-3 py-2 text-lg font-semibold leading-7 no-underline font-clash text-base lg:text-xl lg:leading-7">
+                  <a href="#" className="text-black px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
                     About
                   </a>
                 </div>

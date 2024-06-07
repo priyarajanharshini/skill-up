@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Topbar/>
+    
       <BrowserRouter>
           
           <Routes>
@@ -24,7 +25,7 @@ function App() {
           <Route path="/Whyus" element={<Whyus/>}></Route>
           <Route path="/Glimb" element={<Glimb />}></Route>
           <Route path="/GetStarted" element={<GetStarted />}></Route>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/Home" element={<Home />}></Route>
           <Route path="/AboutUs" element={<AboutUs/>}></Route>
           <Route path="/Founter" element={<Founter/>}></Route>
           <Route path="/StudentSays" element={<StudentSays/>}></Route>
