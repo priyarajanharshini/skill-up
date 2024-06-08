@@ -16,6 +16,8 @@ module.exports = {
         "card-green": '#F2FFED',
         "gray-color": '#cccccc',
         'custom-black': '#171717',
+        'customcolor': '#000000',
+        'custom-dark-text': '#0DDC74',
         'custom-white': 'rgba(255, 255, 255, 1)',
       },
       fontFamily: {
@@ -25,6 +27,7 @@ module.exports = {
         'clash-display': ['"ClashDisplay"', 'sans-serif'],
         'outfit': ['"Outfit"', 'sans-serif'],
         'satisfy': ['Satisfy', 'cursive'],
+        "Brush_Script_MT": ['Brush Script MT', 'cursive'],
       },
       fontWeight: {
         light: 300,
@@ -42,6 +45,7 @@ module.exports = {
       boxShadow: {
         '3xl': '#000000',
         'custom': 'shadow-custom shadow-lg',
+        'custom-box2': '0px 0px 16px 0px #E1E4E3',
         'custom-box': '0px 0px 16px 0px #C7C7C7',
       },
       lineHeight: {
@@ -87,7 +91,7 @@ module.exports = {
         '150px': '150px',
         '170px': '170px',
         '210px': '210px',
-        '280px':'280px'
+        '280px': '280px'
 
 
       },

@@ -1,23 +1,24 @@
+
 import React from "react";
 import Fount from '../Images/Fount.svg';
 
 function Founter() {
     return (
-        <div className="container mx-auto p-4">
-            <div className="text-center my-8">
+        <div className="container mx-auto md:p-8">
+            <div className="text-center my-8 -ml-8">
                 <p className="font-clash text-5xl font-semibold text-custom-gray">
                     <span className="mr-4">Our</span>
                     <span className="text-blue-600">Founder’s message</span>
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 items-center gap-4 ">
-                <div className="flex justify-center ">
-                    <img src={Fount} alt="Fount" className="w-full h-full " />
+            <div className="flex flex-col lg:flex-row items-center gap-4 pt-10">
+                <div className="flex justify-center w-full lg:w-1/2">
+                    <img src={Fount} alt="Fount" className="w-full h-full" />
                 </div>
-               
-                <div className="bg-custom-gray p-6 rounded-40 border-white flex flex-col justify-center w-full h-full">
-                    <div className="text-2xl font-satisfy mb-8 leading-9">
+
+                <div className="bg-custom-gray p-9 rounded-40px border-white flex flex-col justify-center w-full lg:w-1/2 h-full">
+                    <div className="text-3xl font-Brush_Script_MT mb-8 leading-10 text-customcolor">
                         <p>
                             Education is a dynamic and never-ending process. In today's fast-changing world, the philosophy and essence of education, its priority as well as perception have taken new dimensions in order to meet the challenges thrown by the growing impact of globalization. In order to achieve success, we just need to set a goal and work for it with our heart and soul.
                         </p>
@@ -26,10 +27,10 @@ function Founter() {
                         </p>
                     </div>
                     <div className="pt-8">
-                        <p className="font-clash font-semibold text-2xl">
+                        <p className="font-clash leading-7 font-semibold text-2xl text-custom-black">
                             Immanuvel Suthakaran
                         </p>
-                        <p className="font-outfit font-light text-base leading-5 text-slate-400 pt-2">
+                        <p className="font-outfit font-light text-sm leading-5 text-slate-400 pt-2">
                             Founder, S3 Remotica Technologies
                         </p>
                     </div>
@@ -40,9 +41,6 @@ function Founter() {
 }
 
 export default Founter;
-
-
-
 
 
 
