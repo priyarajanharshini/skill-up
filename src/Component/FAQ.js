@@ -24,7 +24,7 @@ function FAQ() {
   };
 
   return (
-    <div className="Things">
+    <div className="Things ">
       <div className="heading">
         <p className="font-clash text-4xl font-extrabold text-center my-14 text-custom-gray sm:text-3xl md:text-5xl">
           <span className="pb-2 inline-block mb-1">Things, you</span>
@@ -40,23 +40,23 @@ function FAQ() {
         {questions.map((question, index) => (
           <div
             key={index}
-            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-Arial sans-serif text-base shadow-custom-box mx-auto mb-[20px] max-w-[85%] ${
+            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] max-w-[87%] ${
               expandedIndex === index ? "border  bg-white" : "hover:border-white hover:bg-white"
             }`}
           >
             <div className="flex items-center justify-between w-full">
-              <p className="font-clash text-2xl font-bold leading-7 text-center p-3">
+              <p className="font-clash text-base  lg:text:xl sm:text-xl md:text-2xl font-bold leading-7 text-center p-3">
                 {question}
-              </p>
+              </p> 
               <p
-                className="text-2xl font-bold leading-7 text-center p-3 cursor-pointer"
+                className="text-xl sm:text-1xl md:text-2xl font-bold leading-7 text-center p-3 cursor-pointer"
                 onClick={() => handleExpand(index)}
               >
                 {expandedIndex === index ? "-" : "+"}
               </p>
             </div>
             {expandedIndex === index && (
-              <div className="font-clash text-lg font-semibold leading-7 pl-9 p-3">
+              <div className="font-clash text-xs  md:text-lg lg:text-lg  sm:text-base font-semibold leading-7 pl-9 p-3">
                 {answers[index]}
               </div>
             )}
