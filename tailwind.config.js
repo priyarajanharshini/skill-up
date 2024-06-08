@@ -26,9 +26,17 @@ module.exports = {
         'outfit': ['"Outfit"', 'sans-serif'],
         'satisfy': ['Satisfy', 'cursive'],
       },
-      fontSize: {
-      },
       fontWeight: {
+        light: 300,
+        regular: 400,
+        semibold: 600,
+        thin: 100,
+        medium: 500,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
+      },
+      fontSize: {
       },
 
       boxShadow: {
@@ -79,6 +87,7 @@ module.exports = {
         '150px': '150px',
         '170px': '170px',
         '210px': '210px',
+        '280px':'280px'
 
 
       },
@@ -94,8 +103,8 @@ module.exports = {
         '50px': '50px'
       },
       spacing: {
-        '16': '70px',
-        '19': '75px'
+        '70px': '70px',
+        '75px': '75px'
       },
       borderColor: {
         'custom-gray': '#D9D9D966',
