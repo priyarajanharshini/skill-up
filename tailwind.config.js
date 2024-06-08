@@ -19,6 +19,7 @@ module.exports = {
         'customcolor': '#000000',
         'custom-dark-text': '#0DDC74',
         'custom-white': 'rgba(255, 255, 255, 1)',
+        'orange': '#FF7A00',
       },
       fontFamily: {
         'clash': ['"ClashDisplay"', 'sans-serif'],
@@ -30,14 +31,7 @@ module.exports = {
         "Brush_Script_MT": ['Brush Script MT', 'cursive'],
       },
       fontWeight: {
-        light: 300,
-        regular: 400,
-        semibold: 600,
-        thin: 100,
-        medium: 500,
-        bold: 700,
-        extrabold: 800,
-        black: 900,
+        
       },
       fontSize: {
       },
@@ -67,6 +61,7 @@ module.exports = {
         },
         'custom-black': { '500': '#171717' },
         'custom-gray': '#F7F7F7',
+        'custom-lightgray': '#F6F6F6',
 
       }
       ),
@@ -120,6 +115,8 @@ module.exports = {
       flex: {
         '25': '0 0 25%',
         '33': '0 0 33.3333%',
+        '48': '0 0 48%',
+        '50' : '0 0 50%',
         '100': '1 1 100%',
       },
 
