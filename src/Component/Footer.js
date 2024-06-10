@@ -7,14 +7,15 @@ function Footer() {
         <div className="md:flex md:justify-between  sm:flex sm:justify-between">
           <div className="mb-6 md:mb-0">
             <h3 className="font-clash self-center text-3xl  font-semibold text-white leading-9 ">Logo</h3>
-            <p className="text-white pt-4 font-sans text-base font-light">
+            <div className="text-white pt-4 font-sans text-base font-light">
               <span className="sm:hidden">
                 Invest as a community, withdraw with trust, and repay with growth.
               </span>
               <span className="hidden sm:block">
-                Invest as a community, withdraw with<br /> trust, and repay with growth.
+                <div> Invest as a community, withdraw with</div>
+                <div> trust, and repay with growth.</div>
               </span>
-            </p>
+            </div>
 
 
           </div>
