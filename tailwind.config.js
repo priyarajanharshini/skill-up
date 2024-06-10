@@ -48,6 +48,7 @@ module.exports = {
         '16px': '16px',
         '32px': '32px',
         '40px': "40px",
+        '50px' :'50px'
       },
       textColor: {
         "lightgray": "#808080",
@@ -126,8 +127,10 @@ module.exports = {
         flex: ['responsive'],
       },
     },
-    plugins: [
-    ],
+    placeholderColor: {
+       'customized-color' : 'black'
+    },
+    plugins: [],
 
   },
 }

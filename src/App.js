@@ -9,10 +9,9 @@ import Topbar from './Component/Topbar';
 import Home from './Component/Home';
 import AboutUs from'./Component/AboutUs';
 import StudentSays from './Component/StudentSays';
-
 import Footer from './Component/Footer';
 import Founter from './Component/Founter';
-
+import Contactus from './Component/Contactus';
 function App() {
   return (
     <div className="App">
@@ -28,7 +27,8 @@ function App() {
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/AboutUs" element={<AboutUs/>}></Route>
           <Route path="/Founter" element={<Founter/>}></Route>
-          <Route path="/StudentSays" element={<StudentSays/>}></Route>
+          <Route path="/StudentSays" element={<StudentSays/>}></Route> 
+          <Route path="/Contactus" element={<Contactus/>}></Route>
           </Routes>
       </BrowserRouter>
       <Footer/>
