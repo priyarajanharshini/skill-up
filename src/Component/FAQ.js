@@ -25,33 +25,25 @@ function FAQ() {
 
   return (
     <div className="Things ">
-      <div className="heading">
-        <p className="font-clash text-4xl font-extrabold text-center my-14 text-custom-gray sm:text-3xl md:text-5xl">
-          <span className="pb-2 inline-block mb-1">Things, you</span>
-          <br />
-          <span>may wonder:</span>
+      <div className="font-clash text-4xl font-semibold text-center my-14 text-custom-gray sm:text-3xl md:text-5xl">
+        <div className="pb-2 inline-block mb-1">Things, you</div>
+        <div>may wonder:
           <span className="text-blue-600/100">
-            FAQ<span>s</span>
-          </span>
-        </p>
+            FAQs
+          </span></div>
       </div>
-
       <div className="pt-7 mb-16">
         {questions.map((question, index) => (
           <div
             key={index}
-            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] max-w-[87%] ${
-              expandedIndex === index ? "border  bg-white" : "hover:border-white hover:bg-white"
-            }`}
-          >
+            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] max-w-[87%] ${expandedIndex === index ? "border  bg-white" : "hover:border-white hover:bg-white"
+              }`}>
             <div className="flex items-center justify-between w-full">
               <p className="font-clash text-base  lg:text:xl sm:text-xl md:text-2xl font-bold leading-7 text-center p-3">
                 {question}
-              </p> 
-              <p
-                className="text-xl sm:text-1xl md:text-2xl font-bold leading-7 text-center p-3 cursor-pointer"
-                onClick={() => handleExpand(index)}
-              >
+              </p>
+              <p className="text-xl sm:text-1xl md:text-2xl font-bold leading-7 text-center p-3 cursor-pointer"
+                onClick={() => handleExpand(index)}>
                 {expandedIndex === index ? "-" : "+"}
               </p>
             </div>
