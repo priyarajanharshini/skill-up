@@ -4,7 +4,7 @@ import Arrow from '../Icons/Arrow.svg';
 import buildings from '../Icons/buildings.svg';
 import sms from '../Icons/sms.svg';
 import call from '../Icons/call.svg';
-import GoogleMapReact from 'google-map-react';
+
 
 
 function Contactus (){
