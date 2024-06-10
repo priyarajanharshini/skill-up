@@ -39,6 +39,14 @@ code {
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/src/asserts/fonts/Clash-display-Fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('/src/asserts/fonts/Clash-display-Fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 
 @font-face {
   font-family: 'Outfit';
