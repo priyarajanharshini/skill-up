@@ -69,6 +69,7 @@ module.exports = {
       gap: {
         '12px': '12px',
         '10px': '10px',
+        '20px' : '20px'
       },
       opacity: {
         '100px': '100px',

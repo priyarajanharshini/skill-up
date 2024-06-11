@@ -1,17 +1,23 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import s3 from '../Icons/s3.svg';
 
 function Topbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleMobileMenuToggle = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const getLinkClass = (path) => {
+    return location.pathname === path ? 'text-blue-500' : 'text-black';
+  };
+
   return (
     <>
       <div className="container mx-auto mt-6">
-        <nav className="bg-gray-100 xs:bg-white rounded-2xl xs:w-11/12 ">
+        <nav className="bg-gray-100 xs:bg-white rounded-2xl xs:w-11/12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               <div className="flex items-center">
@@ -19,15 +25,24 @@ function Topbar() {
               </div>
               <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
                 <div>
-                  <a href="#" className="text-blue-500 px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
+                  <Link 
+                    to="/" 
+                    className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/')}`}
+                  >
                     Home
-                  </a>
-                  <a href="#" className="text-black px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
+                  </Link>
+                  <Link 
+                    to="/Viewallglimb" 
+                    className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/Viewallglimb')}`}
+                  >
                     Courses
-                  </a>
-                  <a href="#" className="text-black px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7">
+                  </Link>
+                  <Link 
+                    to="/about" 
+                    className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/about')}`}
+                  >
                     About
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
@@ -77,20 +92,29 @@ function Topbar() {
           </div>
 
           <div 
-            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5 `}
+            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5`} 
             id="mobile-menu"
           >
             <div className="px-2 pt-2 space-y-1 text-center">
-              <a href="#" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              <Link 
+                to="/" 
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/')}`}
+              >
                 Home
-              </a>
-              <a href="#" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              </Link>
+              <Link 
+                to="/Viewallglimb" 
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/Viewallglimb')}`}
+              >
                 Courses
-              </a>
+              </Link>
               <hr />
-              <a href="#" className="text-black block px-3 py-2 rounded-md text-base font-medium">
+              <Link 
+                to="/about" 
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/about')}`}
+              >
                 About
-              </a>
+              </Link>
             </div>
             <button className="bg-blue-500 text-white mb-28 font-bold py-2 rounded mx-2">
               Contact Us
@@ -103,4 +127,3 @@ function Topbar() {
 }
 
 export default Topbar;
-
