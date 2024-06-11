@@ -14,6 +14,7 @@ import Founter from './Component/Founter';
 import Contactus from './Component/Contactus';
 import Viewall from './Component/Viewallglimb';
 
+import Mentors from './Component/Mentors';
 function App() {
   return (
     <div className="App">
@@ -30,8 +31,11 @@ function App() {
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
           <Route path="/Viewallglimb" element={<Viewall />} />
+          <Route path="/Mentors" element={<Mentors/>}></Route>
         </Routes>
         <Footer />
+         
+        
       </BrowserRouter>
     </div>
   );

@@ -31,7 +31,7 @@ module.exports = {
         "Brush_Script_MT": ['Brush Script MT', 'cursive'],
       },
       fontWeight: {
-        
+
       },
       fontSize: {
       },
@@ -48,7 +48,7 @@ module.exports = {
         '16px': '16px',
         '32px': '32px',
         '40px': "40px",
-        '50px' :'50px'
+        '50px': '50px'
       },
       textColor: {
         "lightgray": "#808080",
@@ -89,8 +89,8 @@ module.exports = {
         '150px': '150px',
         '170px': '170px',
         '210px': '210px',
-        '280px': '280px'
-
+        '280px': '280px',
+        '400px': '400px'
 
       },
       padding: {
@@ -119,7 +119,7 @@ module.exports = {
         '25': '0 0 25%',
         '33': '0 0 33.3333%',
         '48': '0 0 48%',
-        '50' : '0 0 50%',
+        '50': '0 0 50%',
         '100': '1 1 100%',
       },
 
@@ -130,7 +130,7 @@ module.exports = {
       },
     },
     placeholderColor: {
-       'customized-color' : 'black'
+      'customized-color': 'black'
     },
     plugins: [],
 
