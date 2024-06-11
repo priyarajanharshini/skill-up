@@ -15,6 +15,7 @@ import Contactus from './Component/Contactus';
 import Viewall from './Component/Viewallglimb';
 
 import Mentors from './Component/Mentors';
+import PeopleSays from './Component/PeopleSays';
 function App() {
   return (
     <div className="App">
@@ -31,6 +32,7 @@ function App() {
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
           <Route path="/Viewallglimb" element={<Viewall />} />
+          <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
         </Routes>
         <Footer />

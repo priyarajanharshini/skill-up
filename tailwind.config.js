@@ -80,7 +80,9 @@ module.exports = {
         '172px': '172px',
         '200px': '200px',
         '230px': '230px',
-        '400px': '400px'
+        '310px': '310px',
+        '400px': '400px',
+        '470px': '470px'
       },
       width: {
         '88px': '88px',
@@ -102,7 +104,8 @@ module.exports = {
       },
       margin: {
         '120px': '120px',
-        '50px': '50px'
+        '50px': '50px',
+
       },
       spacing: {
         '70px': '70px',

@@ -5,15 +5,16 @@ import noor from '../Images/noorstudentsay.svg';
 import veena from '../Images/veenastudentsay.svg';
 import priya from '../Images/priyastudentsay.svg';
 
-function StudentSays() {
+function PeopleSays() {
     return (
         <>
-            <div className="text-center mb-20 mt-20">
-                <label className="font-clash text-4xl sm:text-5xl md:text-6xl leading-10 font-semibold">
-                    What our
-                    <span className="text-blue-600"> students say</span>...
+            <div className="text-center mb-10 mt-10">
+                <label className="font-clash text-2xl sm:text-4xl md:text-5xl leading-8 font-semibold">
+                    What 
+                    <span className="text-blue-600"> people say</span> about us...
                 </label>
             </div>
+
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mx-auto lg:max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div id="card-one"
                     className="flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg lg:h-310px ">
@@ -93,9 +94,8 @@ function StudentSays() {
                     </div>
                 </div>
             </div>
-
         </>
     );
 }
 
-export default StudentSays;
+export default PeopleSays;
