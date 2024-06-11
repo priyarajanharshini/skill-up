@@ -16,80 +16,80 @@ function WhyUs() {
                 </label>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 sm:mt-20">
                 <div className="personalized-plan border-4 border-white border-opacity-50 shadow-xl overflow-hidden 
-                rounded-custom p-4 bg-gradient-to-b from-[#FFDDDD80] to-[#E2E2E280] shadow-custom h-[400px]">
+                rounded-32px p-4 bg-gradient-to-b from-[#FFDDDD80] to-[#E2E2E280] shadow-custom lg:h-400px">
                     <div className="flex flex-col gap-4 p-6 ">
                         <img src={notes} alt="Personalized Plan" className="w-16 h-16" />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Personalized Plan</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            A well-structured curriculum tailored to <br />industry demands ensures that learners<br />
-                            acquire relevant skills. It focuses on<br />
-                            practical knowledge and up-to-date<br /> content, preparing students for real-world<br /> challenges.
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            A well-structured curriculum tailored to industry demands ensures that learners
+                            acquire relevant skills. It focuses on
+                            practical knowledge and up-to-date content, preparing students for real-world challenges.
                         </p>
                     </div>
                 </div>
 
                 <div className="expert-instructors border-4 border-white shadow-xl overflow-hidden border-opacity-50
-                 rounded-custom p-4 bg-gradient-to-b from-[#DDFFEB80] to-[#E2E2E280] shadow-custom h-[400px]">
+                 rounded-32px p-4 bg-gradient-to-b from-[#DDFFEB80] to-[#E2E2E280] shadow-custom lg:h-400px">
                     <div className="flex flex-col gap-4 p-6">
                         <img src={people} alt="Expert Instructors" className="w-16 h-16" />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Expert Instructors</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            Learning from experienced professionals<br /> who have worked in the field provides <br />
-                            valuable insights. Expert instructors can <br />
-                            share practical examples, industry best<br /> practices, and mentorship, enhancing <br />
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            Learning from experienced professionals who have worked in the field provides 
+                            valuable insights. Expert instructors can 
+                            share practical examples, industry best practices, and mentorship, enhancing 
                             the learning experience.
                         </p>
                     </div>
                 </div>
 
                 <div className="hands-on-learning border-4 border-white shadow-xl overflow-hidden border-opacity-50
-                 rounded-custom p-4 bg-gradient-to-b from-[#DDE7FF80] to-[#E2E2E280] shadow-custom h-[400px]">
+                 rounded-32px p-4 bg-gradient-to-b from-[#DDE7FF80] to-[#E2E2E280] shadow-custom lg:h-400px">
                     <div className="flex flex-col gap-4 p-6">
                         <img src={books} alt="Hands-on Learning" className="w-16 h-16" />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Hands-on Learning</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            Theory alone isn’t sufficient. Hands-on<br /> projects allow learners to apply concepts,<br />
-                            solve problems, and build a portfolio.<br /> Practical experience reinforces theoretical<br />
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            Theory alone isn’t sufficient. Hands-on projects allow learners to apply concepts,
+                            solve problems, and build a portfolio. Practical experience reinforces theoretical
                             knowledge and boosts confidence.
                         </p>
                     </div>
                 </div>
 
                 <div className="access-tools border-4 border-white shadow-xl overflow-hidden border-opacity-50 
-                rounded-custom p-4 bg-gradient-to-b from-[#FAFFDD80] to-[#E2E2E280] shadow-custom h-[400px] mt-5">
+                rounded-32px p-4 bg-gradient-to-b from-[#FAFFDD80] to-[#E2E2E280] shadow-custom lg:h-400px">
                     <div className="flex flex-col gap-4 p-6">
                         <img src={tools} alt="Access to Tools" className="w-16 h-16" />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Access to Tools</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            Exposure to tools and technologies<br /> commonly used in the industry is crucial.<br />
-                            Access to software, platforms, and<br /> development environments ensures students<br />
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            Exposure to tools and technologies commonly used in the industry is crucial.
+                            Access to software, platforms, and development environments ensures students
                             are well-prepared for their future roles.
                         </p>
                     </div>
                 </div>
 
                 <div className="affordable-options border-4 border-white shadow-xl overflow-hidden border-opacity-50
-                 rounded-custom p-4 bg-gradient-to-b from-[#FFEBDD80] to-[#E2E2E280] shadow-custom h-[400px] mt-5">
+                 rounded-32px p-4 bg-gradient-to-b from-[#FFEBDD80] to-[#E2E2E280] shadow-custom lg:h-400px ">
                     <div className="flex flex-col gap-4 p-6">
                         <img src={money} alt="Affordable Options" className="w-16 h-16" />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Affordable Options</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            Learning should be accessible to all.<br /> Affordable pricing and flexible payment<br />
-                            plans accommodate diverse learners,<br /> regardless of financial constraints.
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            Learning should be accessible to all. Affordable pricing and flexible payment
+                            plans accommodate diverse learners, regardless of financial constraints.
                         </p>
                     </div>
                 </div>
 
                 <div className="career-support border-4 border-white shadow-xl overflow-hidden border-opacity-50 
-                rounded-custom p-4 bg-gradient-to-b from-[#FFDDF580] to-[#E2E2E280] shadow-custom h-[400px] mt-5">
+                rounded-32px p-4 bg-gradient-to-b from-[#FFDDF580] to-[#E2E2E280] shadow-custom lg:h-400px ">
                     <div className="flex flex-col gap-4 p-6">
                         <img src={support} alt="Career Support" className="w-16 h-16 " />
                         <p className="font-semibold text-2xl sm:text-3xl lg:text-4xl leading-snug">Career Support</p>
-                        <p className="font-light text-base font-outfit text-gray-700">
-                            Beyond learning, career outcomes matter.<br /> Job placement services, resume building,<br />
-                            interview preparation, and networking <br />opportunities help students transition<br />
+                        <p className="font-light text-custom-16 font-outfit text-gray-700 pb-8">
+                            Beyond learning, career outcomes matter. Job placement services, resume building,
+                            interview preparation, and networking opportunities help students transition
                             successfully into the workforce.
                         </p>
                     </div>
