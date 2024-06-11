@@ -12,30 +12,29 @@ import StudentSays from './Component/StudentSays';
 import Footer from './Component/Footer';
 import Founter from './Component/Founter';
 import Contactus from './Component/Contactus';
+import Viewall from './Component/Viewallglimb';
+
 function App() {
   return (
     <div className="App">
-      <Topbar/>
-    
       <BrowserRouter>
-          
-          <Routes>
-          <Route path="/FAQ" element={<FAQ />}></Route>
-          <Route path="/Whyus" element={<Whyus/>}></Route>
-          <Route path="/Glimb" element={<Glimb />}></Route>
-          <Route path="/GetStarted" element={<GetStarted />}></Route>
-          <Route path="/Home" element={<Home />}></Route>
-          <Route path="/AboutUs" element={<AboutUs/>}></Route>
-          <Route path="/Founter" element={<Founter/>}></Route>
-          <Route path="/StudentSays" element={<StudentSays/>}></Route> 
+        <Topbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/Whyus" element={<Whyus />} />
+          <Route path="/Glimb" element={<Glimb />} />
+          <Route path="/GetStarted" element={<GetStarted />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Founter" element={<Founter />} />
+          <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
-          </Routes>
+          <Route path="/Viewallglimb" element={<Viewall />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer/>
     </div>
   );
 }
-
-
 
 export default App;
