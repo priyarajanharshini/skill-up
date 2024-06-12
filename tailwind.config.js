@@ -43,9 +43,11 @@ module.exports = {
         'custom-box': '0px 0px 16px 0px #C7C7C7',
       },
       lineHeight: {
+        '47px':'48px',
+        '67.2px':'67.2px'
       },
       borderRadius: {
-        '16px': '16px',
+        '28px':'28px',
         '32px': '32px',
         '40px': "40px",
         '50px': '50px'
@@ -75,6 +77,7 @@ module.exports = {
         '100px': '100px',
       },
       height: {
+        '67px':'67px',
         '114px': '114px',
         '150px': '150px',
         '172px': '172px',
@@ -92,7 +95,10 @@ module.exports = {
         '170px': '170px',
         '210px': '210px',
         '280px': '280px',
-        '400px': '400px'
+        '400px': '400px',
+        '831px': '831px',
+        '1104px':'1104px'
+
 
       },
       padding: {
