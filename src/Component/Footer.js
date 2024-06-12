@@ -7,7 +7,7 @@ function Footer() {
         <div className="md:flex md:justify-between  sm:flex sm:justify-between">
           <div className="mb-6 md:mb-0">
             <h3 className="font-clash self-center text-3xl  font-semibold text-white leading-9 ">Logo</h3>
-            <div className="text-white pt-4 font-sans text-base font-light">
+            <div className="text-white pt-4 font-outfit text-base font-light leading-6 ">
               <span className="sm:hidden">
                 Invest as a community, withdraw with trust, and repay with growth.
               </span>
@@ -24,7 +24,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-center lg:flex lg:flex-col-2 lg:gap-x-28 sm:flex sm:flex-row  sm:gap-x-20">
             <div className="mb-6 md:mb-0 md:mr-14 lg:mr-0 ">
               <h2 className="font-clash mb-6 text-xl font-semibold text-white leading-8">Explore</h2>
-              <ul className="text-white font-sans text-base font-light leading-6   "  >
+              <ul className="text-white font-outfit text-base font-light leading-6   "  >
 
                 <li className="mb-4">
                   <a href="#">About</a>
@@ -42,7 +42,7 @@ function Footer() {
             </div>
             <div className="mb-6 md:mb-0 ">
               <h2 className="font-clash mb-6 text-xl font-semibold text-white leading-8">Help</h2>
-              <ul className="text-white font-sans text-base font-light leading-6 ">
+              <ul className="text-white font-outfit text-base font-light leading-6 ">
                 <li className="mb-4">
                   <a href="#">Contact</a>
                 </li>
@@ -63,7 +63,7 @@ function Footer() {
         <hr className="my-6 sm:mx-auto lg:my-6 border-custom-gray" />
 
         <div className="flex w-full flex-col items-center justify-center  md:flex-row md:justify-between">
-          <span className="text-white font-sans text-base font-light leading-6">
+          <span className="text-white font-outfit text-base font-light leading-6">
             © 2024 <a className="">Logo</a>. All Rights Reserved.
           </span>
 

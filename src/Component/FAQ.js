@@ -24,8 +24,8 @@ function FAQ() {
   };
 
   return (
-    <div className="Things ">
-      <div className="font-clash text-4xl font-semibold text-center my-14 text-custom-gray sm:text-3xl md:text-5xl">
+    <div className="Things">
+      <div className="font-clash text-4xl font-semibold text-center mt-16  lg-mb-10 sm:mb-4 md:mb-8 mb-4 text-custom-gray sm:text-3xl md:text-5xl">
         <div className="pb-2 inline-block mb-1">Things, you</div>
         <div>may wonder:
           <span className="text-blue-600/100">
@@ -36,8 +36,8 @@ function FAQ() {
         {questions.map((question, index) => (
           <div
             key={index}
-            className={`group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] max-w-[87%] ${expandedIndex === index ? "border  bg-white" : "hover:border-white hover:bg-white"
-              }`}>
+            className="group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] w-100% lg:mx-10 md:mx-2  sm:mx-5 mx-6">
+        
             <div className="flex items-center justify-between w-full">
               <p className="font-clash text-base  lg:text:xl sm:text-xl md:text-2xl font-bold leading-7 text-center p-3">
                 {question}

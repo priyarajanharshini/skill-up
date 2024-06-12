@@ -18,7 +18,7 @@ function Founter() {
                 </div>
 
                 <div className="bg-custom-gray p-9 rounded-40px border-white flex flex-col justify-center w-full lg:w-1/2 h-full">
-                    <div className="text-3xl font-Brush_Script_MT mb-8 leading-10 text-customcolor">
+                    <div className="text-2xl font-satisfy mb-8 leading-10 text-customcolor font-normal">
                         <p>
                             Education is a dynamic and never-ending process. In today's fast-changing world, the philosophy and essence of education, its priority as well as perception have taken new dimensions in order to meet the challenges thrown by the growing impact of globalization. In order to achieve success, we just need to set a goal and work for it with our heart and soul.
                         </p>
