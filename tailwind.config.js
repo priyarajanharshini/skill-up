@@ -106,16 +106,19 @@ module.exports = {
         '24px': '24px',
         '60px': '60px',
         '75px': '75px',
+        '114px':'114px',
         '120px': '120px',
+        '350px':'350px'
       },
       margin: {
-        '120px': '120px',
         '50px': '50px',
+        '120px': '120px',
 
       },
       spacing: {
         '70px': '70px',
-        '75px': '75px'
+        '75px': '75px',
+        '1024px':'1024px'
       },
       borderColor: {
         'custom-gray': '#D9D9D966',
