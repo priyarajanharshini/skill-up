@@ -43,7 +43,7 @@ module.exports = {
         'custom-box': '0px 0px 16px 0px #C7C7C7',
       },
       lineHeight: {
-        '47px':'48px',
+        '48px':'48px',
         '67.2px':'67.2px'
       },
       borderRadius: {
