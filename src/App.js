@@ -10,7 +10,7 @@ import Home from './Component/Home';
 import AboutUs from'./Component/AboutUs';
 import StudentSays from './Component/StudentSays';
 import Footer from './Component/Footer';
-import Founter from './Component/Founter';
+import Founder from './Component/Founder';
 import Contactus from './Component/Contactus';
 import Viewall from './Component/Viewallglimb';
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/Glimb" element={<Glimb />} />
           <Route path="/GetStarted" element={<GetStarted />} />
           <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/Founter" element={<Founter />} />
+          <Route path="/Founder" element={<Founder />} />
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
           <Route path="/Viewallglimb" element={<Viewall />} />

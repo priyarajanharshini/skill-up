@@ -36,7 +36,7 @@ function FAQ() {
         {questions.map((question, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mx-auto mb-[20px] w-100% lg:mx-10 md:mx-2  sm:mx-5 mx-6">
+            className="group flex flex-col items-center justify-between gap-0 rounded-3xl divide-solid p-8 font-clash text-base shadow-custom-box2 mb-[20px] w-100% lg:mx-10 md:mx-6  sm:mx-6 mx-6">
         
             <div className="flex items-center justify-between w-full">
               <p className="font-clash text-base  lg:text:xl sm:text-xl md:text-2xl font-bold leading-7 text-center p-3">
