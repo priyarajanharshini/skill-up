@@ -21,24 +21,24 @@ function Topbar() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               <div className="flex items-center">
-                <img className="h-8 w-auto" src={s3} alt="Your Company" />
+                <img className="h-32 w-32" src={s3} alt="Your Company" />
               </div>
               <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-center">
                 <div>
-                  <Link 
-                    to="/" 
+                  <Link
+                    to="/"
                     className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/')}`}
                   >
                     Home
                   </Link>
-                  <Link 
-                    to="/Viewallglimb" 
+                  <Link
+                    to="/Viewallglimb"
                     className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/Viewallglimb')}`}
                   >
                     Courses
                   </Link>
-                  <Link 
-                    to="/about" 
+                  <Link
+                    to="/about"
                     className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/about')}`}
                   >
                     About
@@ -46,9 +46,16 @@ function Topbar() {
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
-                <button className="bg-blue-500 text-white text-base font-medium py-3 px-4 rounded-lg">
+                {/* <button className="bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg">
                   Contact Us
-                </button>
+                </button> */}
+                <Link
+                  to="/Contactus"
+                  className={`bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}
+                >
+                  Contact Us
+                </Link>
+
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden mt-7.5">
                 <button
@@ -91,26 +98,26 @@ function Topbar() {
             </div>
           </div>
 
-          <div 
-            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5`} 
+          <div
+            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5`}
             id="mobile-menu"
           >
             <div className="px-2 pt-2 space-y-1 text-center">
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/')}`}
               >
                 Home
               </Link>
-              <Link 
-                to="/Viewallglimb" 
+              <Link
+                to="/Viewallglimb"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/Viewallglimb')}`}
               >
                 Courses
               </Link>
               <hr />
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/about')}`}
               >
                 About
