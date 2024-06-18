@@ -75,5 +75,44 @@ code {
   font-style: normal;
 }
 
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 0; 
+}
+
+.slick-dots li button:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 117, 255, 0.20); 
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  width: 34px;
+  height: 15px; 
+  border-radius: 9999px; 
+  background-color: #0075FF;
+}
 
