@@ -16,9 +16,7 @@ import Viewall from './Component/Viewallglimb';
 import Mentors from './Component/Mentors';
 import PeopleSays from './Component/PeopleSays';
 import Howwestarted from './Component/Howwestarted';
-import Webdevelop from './Component/Webdevelop';
-import Modules from './Component/CourseModules';
-import Otherpopular from './Component/Otherpopular';
+
 function App() {
   return (
     <div className="App">
@@ -30,7 +28,7 @@ function App() {
           <Route path="/Whyus" element={<Whyus />} />
           <Route path="/Glimb" element={<Glimb />} />
           <Route path="/GetStarted" element={<GetStarted />} />
-          <Route path="/About" element={<AboutUs />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Founder" element={<Founder />} />
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
@@ -38,9 +36,6 @@ function App() {
           <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
           <Route path="/Howwestarted" element={<Howwestarted/>}></Route>
-          <Route path="/Webdevelop" element={<Webdevelop />} />
-          <Route path="/CourseModules" element={<Modules />} />
-          <Route path="/Otherpopular" element={<Otherpopular />} />
         </Routes>
         <Footer />
          
