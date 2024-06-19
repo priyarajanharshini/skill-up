@@ -6,7 +6,7 @@ import pic1 from '../Images/pic 1.svg';
 import pic2 from '../Images/pic 2.svg';
 import pic3 from '../Images/pic 3.svg';
 
-function App() {
+function Howwestarted() {
   const settings = {
     dots: true,
     infinite: true,
@@ -130,4 +130,4 @@ function App() {
   );
 }
 
-export default App;
+export default Howwestarted;

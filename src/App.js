@@ -16,7 +16,7 @@ import Viewall from './Component/Viewallglimb';
 
 import Mentors from './Component/Mentors';
 import PeopleSays from './Component/PeopleSays';
-import Whatwestarted from './Component/Whatwestarted';
+import Howwestarted from './Component/Howwestarted';
 function App() {
   return (
     <div className="App">
@@ -35,7 +35,7 @@ function App() {
           <Route path="/Viewallglimb" element={<Viewall />} />
           <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
-          <Route path="/Whatwestarted" element={<Whatwestarted/>}></Route>
+          <Route path="/Howwestarted" element={<Howwestarted/>}></Route>
         </Routes>
         <Footer />
          
