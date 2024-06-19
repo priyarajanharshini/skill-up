@@ -1,11 +1,17 @@
 import React from "react";
 import aboutusvideo from '../Images/Aboutusvideo.svg'
 import playIcon from '../Images/PlayIcon.svg'
+import Founder from "./Founder";
+import Howwestarted from "./Howwestarted";
+import Mentors from "./Mentors";
+import PeopleSays from "./PeopleSays";
+import GetStarted from "./GetStarted";
 
 
 const AboutUs = () => {
   return (
     <>
+     <div className="container mx-auto mt-4">
       <div className="flex flex-col relative items-center gap-6 mt-12 sm:mt-20 md:mt-20 lg:mt-20 overflow-hidden">
         <div className="flex flex-col items-center">
           <h1 className="font-clash text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-semibold leading-67.2px sm:leading-67.2px text-center">
@@ -52,6 +58,13 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Founder/>
+      <Howwestarted/>
+      <Mentors/>
+      <PeopleSays/>
+      <GetStarted/>
+      </div>
+      
     </>
   )
 

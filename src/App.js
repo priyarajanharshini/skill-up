@@ -13,7 +13,6 @@ import Footer from './Component/Footer';
 import Founder from './Component/Founder';
 import Contactus from './Component/Contactus';
 import Viewall from './Component/Viewallglimb';
-
 import Mentors from './Component/Mentors';
 import PeopleSays from './Component/PeopleSays';
 import Howwestarted from './Component/Howwestarted';
@@ -28,7 +27,7 @@ function App() {
           <Route path="/Whyus" element={<Whyus />} />
           <Route path="/Glimb" element={<Glimb />} />
           <Route path="/GetStarted" element={<GetStarted />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/About" element={<AboutUs />} />
           <Route path="/Founder" element={<Founder />} />
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
