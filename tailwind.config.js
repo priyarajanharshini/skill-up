@@ -82,7 +82,8 @@ module.exports = {
       },
       height: {
         '67px':'67px',
-         '78px' : '78px',
+        '69vh' : '69vh',
+        '78px' : '78px',
         '114px': '114px',
         '150px': '150px',
         '172px': '172px',
@@ -91,6 +92,7 @@ module.exports = {
         '310px': '310px',
         '400px': '400px',
         '470px': '470px',
+        
       },
       width: {
         '88px': '88px',
@@ -102,10 +104,8 @@ module.exports = {
         '280px': '280px',
         '400px': '400px',
         '831px': '831px',
-        '1104px':'1104px'
-
-
-      },
+        '1104px':'1104px',
+       },
       padding: {
         '16px': '16px',
         '24px': '24px',

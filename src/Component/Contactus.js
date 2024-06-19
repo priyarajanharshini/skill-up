@@ -8,6 +8,7 @@ import call from '../Icons/call.svg';
 
 
 function Contactus (){
+  const mapUrl = "https://maps.google.com/maps?q=8.9434556,77.4659909&hl=es&z=14&output=embed&iwloc=0&markers=color:red|8.9434556,77.4659909";
     return(
         <>
         <div className=" flex items-center justify-center p-6">
@@ -97,20 +98,16 @@ function Contactus (){
           </div>
   
           <div class="flex flex-col lg:flex-row gap-6 sm:gap-10 md:gap-10 lg:gap-10 jusify-between">
-
-          <div class="w-full w-[550px] h-[450px] rounded-50px bg-gray-200">
-            <div class="w-full w-[550px] h-[450px] p-1">
-              <div class="w-full h-full ">
-                <iframe class="w-full h-full rounded-50px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d77.466044!3d8.943435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"></iframe>
+          <div class="w-full h-[450px] rounded-50px bg-gray-200">
+            <div class="w-full h-[450px] p-1">
+              <div class="w-full h-full">
+                <iframe class="w-full h-full rounded-50px" src={mapUrl}allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             </div>
-         
 
-  
-  
-            <div class="w-full w-[550px] h-[450px] rounded-50px bg-gray-50">
-              <div class="text-left px-20 py-8">
+         <div class="w-full h-[450px] rounded-50px bg-gray-50">
+              <div class="text-left px-8 lg:px-16 py-8">
                 <p class="font-outfit text-normal font-normal leading-5 text-gray-500 mb-4">Address:</p>
                 <div class="flex items-center mt-1 mb-4">
                   <img src={buildings} class="mr-2" alt="Buildings icon" />
