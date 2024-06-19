@@ -13,10 +13,12 @@ import Footer from './Component/Footer';
 import Founder from './Component/Founder';
 import Contactus from './Component/Contactus';
 import Viewall from './Component/Viewallglimb';
-
 import Mentors from './Component/Mentors';
 import PeopleSays from './Component/PeopleSays';
 import Howwestarted from './Component/Howwestarted';
+import Webdevelop from './Component/Webdevelop';
+import Modules from './Component/CourseModules';
+import Otherpopular from './Component/Otherpopular';
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,9 @@ function App() {
           <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
           <Route path="/Howwestarted" element={<Howwestarted/>}></Route>
+          <Route path="/Webdevelop" element={<Webdevelop />} />
+          <Route path="/CourseModules" element={<Modules />} />
+          <Route path="/Otherpopular" element={<Otherpopular />} />
         </Routes>
         <Footer />
          

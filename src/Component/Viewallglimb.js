@@ -7,12 +7,18 @@ import elipse1 from '../Images/Ellipse 6.svg';
 import elipse2 from '../Images/Ellipse 6 (2).svg';
 import FAQ from "./FAQ";
 import GetStarted from "./GetStarted";
-
+import { useNavigate } from 'react-router-dom';
 function Viewall () {
+  const navigate = useNavigate();
+  const handleCardClick = (index) => {
+    if (index === 0) {
+      navigate('/Webdevelop');
+    }
+  };
     const cards = [
         {
           image: web,
-          title: 'HTML, CSS and Javascript for web developers ........',
+          title: 'HTML, CSS and Javascript for web developers ',
           elipse: elipse1,
           instructor: 'Dan Scott',
           duration: '11 hr 30 min',
@@ -32,7 +38,7 @@ function Viewall () {
         },
         {
           image: web,
-          title: 'HTML, CSS and Javascript for web developers ........',
+          title: 'HTML, CSS and Javascript for web developers',
           elipse: elipse1,
           instructor: 'Dan Scott',
           duration: '11 hr 30 min',
@@ -52,7 +58,7 @@ function Viewall () {
         },
         {
           image: web,
-          title: 'HTML, CSS and Javascript for web developers ........',
+          title: 'HTML, CSS and Javascript for web developers ',
           elipse: elipse1,
           instructor: 'Dan Scott',
           duration: '11 hr 30 min',
@@ -72,7 +78,7 @@ function Viewall () {
         },
         {
           image: web,
-          title: 'HTML, CSS and Javascript for web developers ........',
+          title: 'HTML, CSS and Javascript for web developers ',
           elipse: elipse1,
           instructor: 'Dan Scott',
           duration: '11 hr 30 min',
@@ -103,7 +109,7 @@ function Viewall () {
               <div
                 key={index}
                 className="sm:flex-100 md:flex-35 lg:flex-48 "
-               
+                onClick={() => handleCardClick(index)}
               > 
               <div className='shadow-xl rounded-3xl overflow-hidden border-2 border-white p-4 m-4 bg-custom-lightgray h-full'>
                 <div className='relative'>
@@ -133,7 +139,11 @@ function Viewall () {
                   </div>
                 </div>
                 <div className="mt-4">
-                  <h3 className="font-clash font-semibold text-2xl leading-7">{card.title}</h3>
+                <div className="h-14 overflow-hidden">
+                      <label className="font-clash font-semibold text-2xl leading-7 line-clamp-2">
+                        {card.title}
+                      </label>
+                    </div>
                   <div className="flex items-center mt-6">
                     <img className="w-10 h-10 rounded-full" src={card.elipse} alt="Instructor" />
                     <p className="ml-4 font-clash font-semibold text-xl leading-none">{card.instructor}</p>
