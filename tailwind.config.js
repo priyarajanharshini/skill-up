@@ -34,6 +34,8 @@ module.exports = {
 
       },
       fontSize: {
+        '56px' : '56px',
+        '50px' : '50px'
       },
 
       boxShadow: {
@@ -44,7 +46,8 @@ module.exports = {
       },
       lineHeight: {
         '48px':'48px',
-        '67.2px':'67.2px'
+        '67.2px':'67.2px',
+        '60px' : '60px',
       },
       borderRadius: {
         '28px':'28px',
@@ -56,6 +59,7 @@ module.exports = {
         "lightgray": "#808080",
         'black': '#222222',
         'sky-blue': '#0075FF',
+        'lightwhite' : '#FFFFFF',
       },
       backgroundColor: theme => ({
         'blue': {
@@ -78,6 +82,7 @@ module.exports = {
       },
       height: {
         '67px':'67px',
+         '78px' : '78px',
         '114px': '114px',
         '150px': '150px',
         '172px': '172px',
@@ -85,7 +90,7 @@ module.exports = {
         '230px': '230px',
         '310px': '310px',
         '400px': '400px',
-        '470px': '470px'
+        '470px': '470px',
       },
       width: {
         '88px': '88px',
@@ -133,6 +138,8 @@ module.exports = {
         '48': '0 0 48%',
         '50': '0 0 50%',
         '100': '1 1 100%',
+        '45' : '0 0 45%',
+        '47' : '0 0 47%'
       },
 
     },
