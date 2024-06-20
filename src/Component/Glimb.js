@@ -26,15 +26,16 @@ function Glimb() {
         console.error("There was an error fetching the data!", error);
       });
   }, []);
-  console.log("course",courses);
+  console.log("course", courses);
 
   const handleViewAllClick = () => {
     setShowMore(!showMore);
   };
 
-  const handleCardClick = (index) => {
-    if (index === 0) {
-      navigate('/Webdevelop');
+  const handleCardClick = (course_Id) => {
+    console.log("course_Id", course_Id)
+    if (course_Id) {
+      navigate('/CouresDetails',{state:course_Id});
     }
   };
 
@@ -51,7 +52,7 @@ function Glimb() {
           </div>
           <div className="lg:px-10 flex flex-wrap mt-10 m-0 gap-y-20px">
             {Array.isArray(courses) && courses.map((card, index) => (
-              <div key={index} className="sm:flex-100 md:flex-50 lg:flex-1" onClick={() => handleCardClick(index)}>
+              <div key={index} className="sm:flex-100 md:flex-50 lg:flex-1" onClick={() => handleCardClick(card.id)}>
                 <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white h-full p-4 m-4 bg-custom-lightgray">
                   <div className="relative">
                     <div className="">
@@ -88,11 +89,11 @@ function Glimb() {
                     <div className="flex justify-between items-center mt-6">
                       <div className="flex items-center">
                         <img className="w-6 h-6" src={clock} alt="Clock" />
-                        <span className="ml-2 font-normal lightgray outfit">{card.TotalDuration}</span>
+                        <span className="ml-2 font-normal lightgray outfit">{card.TotalDuration.hours}hr{card.TotalDuration.minutes}min</span>
                       </div>
                       <div className="flex items-center">
                         <img className="w-6 h-6" src={profile} alt="Profile" />
-                        <span className="ml-2 text-gray-500">{card.TotalReviews}</span>
+                        <span className="ml-2 text-gray-500">{card.TotalReviews} </span>
                       </div>
                     </div>
                   </div>
