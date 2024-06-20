@@ -16,7 +16,9 @@ import Viewall from './Component/Viewallglimb';
 import Mentors from './Component/Mentors';
 import PeopleSays from './Component/PeopleSays';
 import Howwestarted from './Component/Howwestarted';
-
+import Webdevelop from './Component/Webdevelop';
+import Modules from './Component/CourseModules';
+import Otherpopular from './Component/Otherpopular';
 function App() {
   return (
     <div className="App">
