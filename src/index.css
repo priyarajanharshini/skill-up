@@ -95,7 +95,7 @@ code {
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 0; 
+  font-size: 0;
 }
 
 .slick-dots li button:before {
@@ -103,7 +103,7 @@ code {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: rgba(0, 117, 255, 0.20); 
+  background-color: rgba(0, 117, 255, 0.20);
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
@@ -111,8 +111,8 @@ code {
 .slick-dots li.slick-active button:before {
   content: '';
   width: 34px;
-  height: 15px; 
-  border-radius: 9999px; 
+  height: 15px;
+  border-radius: 9999px;
   background-color: #0075FF;
 }
 
