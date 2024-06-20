@@ -36,6 +36,9 @@ function App() {
           <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
           <Route path="/Howwestarted" element={<Howwestarted/>}></Route>
+          <Route path="/CouresDetails" element={<Webdevelop />} />
+          <Route path="/CourseModules" element={<Modules />} />
+          <Route path="/Otherpopular" element={<Otherpopular />} />
         </Routes>
         <Footer />
          
