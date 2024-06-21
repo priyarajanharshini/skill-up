@@ -52,7 +52,7 @@ function Howwestarted() {
           How<span className="text-blue-600"> we started</span>
         </h1>
       </div>
-      <div className='lg:block md:hidden sm:hidden hidden '>
+      <div className='lg:block md:block sm:hidden hidden '>
         <div className="flex flex-wrap pt-6 -mt-10 lg:mt-0 md:-mt-8 sm:-mt-8 ">
           <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 p-4">
             <div className="bg-gray-100 p-6 rounded-3xl shadow-lg h-auto flex flex-col">
@@ -89,7 +89,7 @@ function Howwestarted() {
           </div>
         </div>
       </div>
-      <div className="lg:hidden md:block sm:block block">
+      <div className="lg:hidden md:hidden sm:block block">
         <Slider {...settings}>
           <div className="p-4">
             <div className="bg-gray-100 p-6 rounded-3xl shadow-lg h-auto flex flex-col">

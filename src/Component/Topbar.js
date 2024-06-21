@@ -46,9 +46,7 @@ function Topbar() {
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
-                {/* <button className="bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg">
-                  Contact Us
-                </button> */}
+    
                 <Link
                   to="/Contactus"
                   className={`bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}

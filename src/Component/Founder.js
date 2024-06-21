@@ -6,7 +6,7 @@ function Founder() {
     return (
         <div className="container mx-auto md:p-8">
             <div className="text-center my-8">
-                <p className="font-clash text-5xl font-semibold text-custom-gray">
+                <p className="font-clash lg:text-5xl text-4xl font-semibold text-custom-gray lg:px-0 px-4">
                     <span className="mr-4">Our</span>
                     <span className="text-blue-600">Founder’s message</span>
                 </p>
@@ -14,7 +14,7 @@ function Founder() {
 
             <div className="flex flex-col lg:flex-row items-center gap-4 pt-10">
                 <div className="flex justify-center w-full lg:w-1/2">
-                    <img src={Fount} alt="Fount" className="w-full h-full" />
+                    <img src={Fount} alt="Fount" className="w-full h-full lg:px-0 px-4" />
                 </div>
 
                 <div className="bg-custom-gray p-9 rounded-40px border-white flex flex-col justify-center w-full lg:w-1/2 h-full">
