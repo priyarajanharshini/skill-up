@@ -89,7 +89,7 @@ function Glimb() {
               A glimpse on <span className="text-blue-600 block mt-3 clash">what we offer</span>
             </h3>
           </div>
-          <div className="lg:block md:hidden sm:hidden hidden">
+          <div className="lg:block md:block sm:hidden hidden">
             <div className="lg:px-10 flex flex-wrap mt-10 m-0 gap-y-20px">
             {Array.isArray(courses) && courses.map((card, index) => (
               <div key={index} className="sm:flex-100 md:flex-50 lg:flex-1" onClick={() => handleCardClick(card.id)}>
@@ -144,7 +144,7 @@ function Glimb() {
             </div>
           </div>
 
-          <div className="lg:hidden md:block sm:block block">
+          <div className="lg:hidden md:hidden sm:block block">
             <Slider {...settings}>
               {Array.isArray(courses) && courses.map((card) => (
                 <div key={card.id} onClick={() => handleCardClick(card.id)}>

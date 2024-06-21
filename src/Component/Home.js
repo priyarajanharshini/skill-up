@@ -9,7 +9,7 @@ import Glimb from "./Glimb";
 import WhyUs from "./whyus";
 import FAQ from "./FAQ";
 import GetStarted from "./GetStarted";
-
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -65,10 +65,10 @@ function Home() {
                         </div>
 
                     </div>
-                    <div className="mt-7">
-                        <button className="font-clash bg-blue-500 font-medium text-white text-xl py-2 px-4 rounded-xl text-sm w-60 min-h-16">
+                    <div className="mt-12">
+                        <Link to="/Viewallglimb"className="bg-blue-500 text-white py-6 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
                             Get Started
-                        </button>
+                        </Link>
                     </div>
 
                 </div>
