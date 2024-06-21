@@ -51,7 +51,7 @@ function Viewall() {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="orange" viewBox="0 0 24 24" strokeWidth="1.5"  stroke="orange"  className="w-6 h-6 mr-1">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 17.25l6.16 3.727-1.69-7.197 5.53-4.797-7.33-.637L12 1.5 9.33 8.346l-7.33.637 5.53 4.797-1.69 7.197L12 17.25z"/>
                   </svg>
-                  <span className='font-semibold text-xl'>4.8</span>
+                  <span className='font-semibold text-xl'>{CourseName.Ratings}</span>
                       </div>
                 </div>         
                 <div className="mt-4">
