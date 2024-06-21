@@ -62,7 +62,7 @@ function Viewall() {
                   </div>
                   <div className="flex items-center mt-6">
                     <img className="w-10 h-10 rounded-full" src={CourseName.AuthorProfile} alt="Instructor" />
-                    <p className="ml-4 font-clash font-semibold text-xl leading-none">{CourseName.AuthorName}</p>
+                    <p className="ml-4 font-clash font-medium text-xl leading-none">{CourseName.AuthorName}</p>
                   </div>
                   <div className="flex justify-between items-center mt-6">
                         <div className="flex items-center">
