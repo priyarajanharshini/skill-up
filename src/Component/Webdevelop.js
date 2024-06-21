@@ -36,7 +36,6 @@ function Webdevelop() {
 
     console.log("course", course);
 
-
     return (
         <>
             <div className="container mx-auto">
@@ -66,9 +65,8 @@ function Webdevelop() {
                 </div>
                 {Array.isArray(course) && course.map((course, index) => (
                     <div key={index} className="flex flex-wrap justify-center mt-16 gap-8">
-
-                        <div className="sm:flex-auto md:flex-47 lg:flex-45">
-                            <div key={index} className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white m-4 bg-custom-lightgray p-10">
+                        <div className="sm:flex-auto md:flex-47 lg:flex-45 w-11/12">
+                            <div className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white bg-custom-lightgray p-10">
                                 <p className="font-clash font-semibold text-2xl">Courses Details</p>
                                 <p className="border-b border-gray-300 mt-6"></p>
                                 <div className="flex  justify-between mt-8">
@@ -121,12 +119,10 @@ function Webdevelop() {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="sm:flex-auto md:flex-47 lg:flex-45">
-                            <div className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white m-4 bg-custom-lightgray p-10">
+                        <div className="sm:flex-auto md:flex-47 lg:flex-45 w-11/12">
+                            <div className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white  bg-custom-lightgray p-10">
                                 <p className="font-clash font-semibold text-2xl">Courses Objective</p>
                                 <p className="border-b border-gray-300 mt-6"></p>
-
                                 <div className="mt-6">
                                     <ul className="list-disc list-inside">
                                         {course.Objective.split('#*').map((objective, index) => (
@@ -141,14 +137,12 @@ function Webdevelop() {
                                             {skill}
                                         </button>
                                     ))}
+
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 ))}
-
 
 
                 <Modules />
