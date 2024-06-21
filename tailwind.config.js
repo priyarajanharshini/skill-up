@@ -141,7 +141,10 @@ module.exports = {
         '45' : '0 0 45%',
         '47' : '0 0 47%'
       },
-
+      maxHeight:{
+        '400px': '400px',
+        '430px': '430px',
+      }
     },
     variants: {
       extend: {
