@@ -114,7 +114,7 @@ function Glimb() {
                             d="M12 17.25l6.16 3.727-1.69-7.197 5.53-4.797-7.33-.637L12 1.5 9.33 8.346l-7.33.637 5.53 4.797-1.69 7.197L12 17.25z"
                           />
                         </svg>
-                        <span className="font-semibold text-xl">4.8</span>
+                        <span className="font-semibold text-xl">{card.Ratings}</span>
                       </div>
                     </div>
                     <div className="mt-4">
