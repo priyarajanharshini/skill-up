@@ -8,6 +8,7 @@ import JAVA from '../Icons/JAVA .svg';
 import Glimb from "./Glimb";
 import WhyUs from "./whyus";
 import FAQ from "./FAQ";
+import StudentSays from "./StudentSays";
 import GetStarted from "./GetStarted";
 import { Link } from "react-router-dom";
 
@@ -110,6 +111,7 @@ function Home() {
 
                 <WhyUs />
                 <Glimb />
+                <StudentSays/>
                 <FAQ />
                 <GetStarted />
 
