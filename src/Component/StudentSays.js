@@ -16,12 +16,12 @@ function StudentSays() {
             </div>
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mx-auto lg:max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div id="card-one"
-                    className="flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg lg:h-310px ">
+                    className="flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg lg:h-310px">
                     <p className="leading-6 font-outfit font-light text-start mb-4 text-base sm:text-lg mx-4">
                         “S3 transformed my life! I started with the Python for
-                        <br /> Beginners course, and now I’m a data science wizard.
-                        <br /> The flexibility to learn at my own pace was a game-changer.
-                        <br /> Plus, the certificates make my LinkedIn profile shine!”
+                        Beginners course, and now I’m a data science wizard.
+                        The flexibility to learn at my own pace was a game-changer.
+                        Plus, the certificates make my LinkedIn profile shine!”
                     </p>
 
                     <div className="flex items-center">
@@ -38,10 +38,11 @@ function StudentSays() {
                         “As a marketing professional, I needed to upskill. Coursera’s
                         Digital Marketing Specialization was my secret weapon. The
                         hands-on projects and expert instructors gave me the edge I
-                        needed. Now I’m rocking my job interviews!<br /><br />
+                        needed. Now I’m rocking my job interviews!  </p>
+                     <p className="leading-6 font-outfit font-light text-start mb-4 text-base sm:text-lg mx-4">   
                         I’m a self-taught coder, and Coursera’s Full Stack Web
                         Development track was my compass. The practical
-                        assignments and peer feedback kept me motivated. I even<br />
+                        assignments and peer feedback kept me motivated. I even
                         built my portfolio website using what I learned!”
                     </p>
 
@@ -54,15 +55,16 @@ function StudentSays() {
                     </div>
                 </div>
 
-                <div id="card-three" className="lg:mt-[-100px] flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg h-auto">
+                <div id="card-three" className="lg:mt-[-90px] flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg h-auto">
                     <p className="leading-6 font-outfit font-light text-start mb-4 text-base sm:text-lg mx-4">
                         “As a marketing professional, I needed to upskill. Coursera’s
                         Digital Marketing Specialization was my secret weapon. The
                         hands-on projects and expert instructors gave me the edge I
-                        needed. Now I’m rocking my job interviews! <br /><br />
+                        needed. Now I’m rocking my job interviews!   </p>
+                     <p className="leading-6 font-outfit font-light text-start mb-4 text-base sm:text-lg mx-4">   
                         I’m a self-taught coder, and Coursera’s Full Stack Web
                         Development track was my compass. The practical
-                        assignments and peer feedback kept me motivated. I even<br />
+                        assignments and peer feedback kept me motivated. I even
                         built my portfolio website using what I learned!”
                     </p>
 
@@ -76,11 +78,11 @@ function StudentSays() {
                 </div>
 
                 <div id="card-four"
-                    className="flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg lg:h-310px ">
+                    className="flex flex-col items-start p-4 sm:p-6 border rounded-32px shadow-lg lg:h-auto">
                     <p className="leading-6 font-outfit font-light text-start mb-4 text-base sm:text-lg mx-4">
-                        “S3 transformed my life! I started with the Python for<br />
-                        Beginners course, and now I’m a data science wizard.<br />
-                        The flexibility to learn at my own pace was a game-changer.<br />
+                        “S3 transformed my life! I started with the Python for
+                        Beginners course, and now I’m a data science wizard.
+                        The flexibility to learn at my own pace was a game-changer.
                         Plus, the certificates make my LinkedIn profile shine!”
                     </p>
 
