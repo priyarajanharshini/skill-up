@@ -1,4 +1,3 @@
-
 import React from "react";
 import Fount from '../Images/Fount.svg';
 
@@ -12,9 +11,9 @@ function Founder() {
                 </p>
             </div>
 
-            <div className="flex flex-col lg:flex-row items-center gap-4 pt-10">
+            <div className="flex flex-col lg:flex-row items-center gap-4 mt-20 sm:mx-8 mx-5 lg:mx-0">
                 <div className="flex justify-center w-full lg:w-1/2">
-                    <img src={Fount} alt="Fount" className="w-full h-full lg:px-0 px-4" />
+                    <img src={Fount} alt="Fount" className="w-full h-full " />
                 </div>
 
                 <div className="bg-custom-gray p-9 rounded-40px border-white flex flex-col justify-center w-full lg:w-1/2 h-full">
