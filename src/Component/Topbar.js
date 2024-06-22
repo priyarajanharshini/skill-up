@@ -32,8 +32,8 @@ function Topbar() {
                     Home
                   </Link>
                   <Link
-                    to="/Viewallglimb"
-                    className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/Viewallglimb')}`}
+                    to="/course"
+                    className={`px-3 py-2 text-lg font-medium leading-7 no-underline font-clash lg:leading-7 ${getLinkClass('/course')}`}
                   >
                     Courses
                   </Link>
@@ -108,8 +108,8 @@ function Topbar() {
                 Home
               </Link>
               <Link
-                to="/Viewallglimb"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/Viewallglimb')}`}
+                to="/course"
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/course')}`}
               >
                 Courses
               </Link>

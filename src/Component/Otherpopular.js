@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import '../index.css';
 import axiosInstance from '../config';
+import GetStarted from './GetStarted';
 function Otherpopular() {
 
   const settings = {
@@ -177,6 +178,7 @@ function Otherpopular() {
           ))}
         </Slider>
       </div>
+      <GetStarted/>
     </>
   )
 }

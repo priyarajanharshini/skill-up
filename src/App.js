@@ -34,7 +34,7 @@ function App() {
           <Route path="/Founder" element={<Founder />} />
           <Route path="/StudentSays" element={<StudentSays />} />
           <Route path="/Contactus" element={<Contactus/>}></Route>
-          <Route path="/Viewallglimb" element={<Viewall />} />
+          <Route path="/course" element={<Viewall />} />
           <Route path="/PeopleSays" element={<PeopleSays/>}></Route>
           <Route path="/Mentors" element={<Mentors/>}></Route>
           <Route path="/Howwestarted" element={<Howwestarted/>}></Route>

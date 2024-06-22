@@ -198,7 +198,7 @@ function Glimb() {
             </Slider>
           </div>
           <div className="flex justify-center mt-24 mb-12">
-            <Link to="/Viewallglimb" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold" onClick={handleViewAllClick}>
+            <Link to="/course" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold" onClick={handleViewAllClick}>
               {showMore ? '' : 'View All'}
             </Link>
           </div>
