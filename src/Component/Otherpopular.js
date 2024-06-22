@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import clock from '../Images/clock.svg';
 import profile from '../Images/profile-2user.svg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import '../index.css';
+import axiosInstance from '../config';
 function Otherpopular() {
 
   const settings = {
@@ -47,7 +48,7 @@ function Otherpopular() {
 
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:2000/get/get-course')
+    axiosInstance.get('/get/get-course')
       .then(response => {
         console.log("API response:", response.data.getCourse);
         if (Array.isArray(response.data.getCourse)) {
