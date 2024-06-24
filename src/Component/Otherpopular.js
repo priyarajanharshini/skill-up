@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import '../index.css';
 import axiosInstance from '../config';
 import GetStarted from './GetStarted';
-function Otherpopular() {
+function Otherpopular({ courseId }) {
 
   const settings = {
     dots: true,
@@ -52,16 +52,16 @@ function Otherpopular() {
       .then(response => {
         console.log("API response:", response.data.getCourse);
         if (Array.isArray(response.data.getCourse)) {
-          const activeCourse = response.data.getCourse.filter(course => course.Status !== 0);
-          setCourses(activeCourse);
+          const filteredCourses = response.data.getCourse.filter(course => course.id !== courseId);
+                    setCourses(filteredCourses);
         } else {
-          console.error("Expected an array but got:", response.data);
+          console.error("OtherPopular response", response.data);
         }
       })
       .catch(error => {
-        console.error("There was an error fetching the data!", error);
+        console.error("error api OtherPopular", error);
       });
-  }, []);
+  }, [courseId]);
 
   return (
     <>
