@@ -28,7 +28,7 @@ const GetStarted = () => {
           <p className="font-outfit font-light leading-8 text-lg text-center text-white mt-5 px-4 sm:px-12 md:px-20 lg:px-52 xl:px-350px">
             Our Online Learning Resource Centre has tips, tricks and inspiring stories to help you learn while staying home.
           </p>
-          <button onClick={handleClick} className="font-clash font-semibold px-6 sm:px-8 md:px-60px py-3 sm:py-4 md:py-5 w-60 rounded-2xl bg-blue-500  mt-8">
+          <button onClick={handleClick} className="font-clash font-semibold px-6 sm:px-8 md:px-60px py-3 text-xl sm:py-4 md:py-5 w-60 rounded-2xl bg-blue-500  mt-8">
             Get Started
           </button>
         </div>
