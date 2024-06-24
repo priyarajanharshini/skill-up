@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import clock from '../Images/clock.svg';
 import profile from '../Images/profile-2user.svg';
-import Viewall from './Viewallglimb';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import '../index.css';
+import axiosInstance from '../config';
 
 function Glimb() {
   const settings = {
@@ -47,12 +46,12 @@ function Glimb() {
     ]
   };
 
-  const [showMore, setShowMore] = useState(false);
+ 
   const [courses, setCourses] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:2000/get/get-course')
+    axiosInstance.get('http://localhost:2000/get/get-course')
       .then(response => {
         console.log("API response:", response.data.getCourse);
         if (Array.isArray(response.data.getCourse)) {
@@ -67,9 +66,9 @@ function Glimb() {
   }, []);
   console.log("course", courses);
 
-  const handleViewAllClick = () => {
-    setShowMore(!showMore);
-  };
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleCardClick = (course_Id) => {
     console.log("course_Id", course_Id)
@@ -80,10 +79,7 @@ function Glimb() {
 
   return (
     <>
-      {showMore ? (
-        <Viewall />
-      ) : (
-        <>
+     
           <div className="mt-14">
             <h3 className="text-center font-clash font-semibold text-5xl">
               A glimpse on <span className="text-blue-600 block mt-3 clash">what we offer</span>
@@ -197,13 +193,12 @@ function Glimb() {
               ))}
             </Slider>
           </div>
-          <div className="flex justify-center mt-24 mb-12">
-            <Link to="/course" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold" onClick={handleViewAllClick}>
-              {showMore ? '' : 'View All'}
+          <div className="flex justify-center lg:mt-20 md:mt-20 mb-12  ">
+            <Link to="/course" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
+              Viewall
             </Link>
           </div>
-        </>
-      )}
+       
     </>
   );
 }
