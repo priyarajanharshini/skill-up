@@ -13,7 +13,7 @@ import Modules from "./CourseModules";
 import Otherpopular from "./Otherpopular";
 import { useLocation } from "react-router-dom";
 import axiosInstance from "../config";
-
+import { Link } from "react-router-dom";
 function Webdevelop() {
 
     const location = useLocation();
@@ -72,12 +72,14 @@ function Webdevelop() {
                             <img className="w-10 h-10 rounded-full" src={course.AuthorProfile} alt="Instructor" />
                             <p className="ml-4 font-clash font-medium text-xl leading-6">{course.AuthorName}</p>
                         </div>
-                        <button className="bg-blue-500 font-semibold text-xl text-white py-5 px-12 rounded-2xl mt-8 font-clash">
-                            Contact us
-                        </button>
+                        <div className="flex justify-center mt-8 ">
+            <Link to="/Contactus" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
+              Contactus
+            </Link>
+          </div>
                     </div>
 
-                    <div className="flex flex-wrap justify-center mt-16 gap-8">
+                    <div className="flex flex-wrap justify-center mt-24 gap-8">
                         <div className="sm:flex-auto md:flex-47 lg:flex-45 w-11/12">
                             <div className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white bg-custom-lightgray p-10">
                                 <p className="font-clash font-semibold text-2xl">Courses Details</p>
@@ -94,7 +96,7 @@ function Webdevelop() {
                                         <p className="font-outfit font-normal text-base text-gray-500 ">Duration</p>
                                         <div className="flex items-center mt-2">
                                             <img className="w-6 h-6" src={clock1} alt="Duration" />
-                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">{course.TotalDuration.hours}hr {course.TotalDuration.hours}min</p>
+                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">{course.TotalDuration.hours}hr {course.TotalDuration.minutes}min</p>
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +161,7 @@ function Webdevelop() {
 
 
                     <Modules />
-                    <Otherpopular />
+                    <Otherpopular courseId={course_Id} />
                 </div>
             ))}
 

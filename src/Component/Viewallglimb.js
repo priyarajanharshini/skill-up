@@ -25,6 +25,10 @@ function Viewall() {
       });
   }, []);
 
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
+
   const handleCardClick = (course_Id) => {
     console.log("course_Id", course_Id)
     if (course_Id) {
