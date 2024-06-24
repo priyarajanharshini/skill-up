@@ -16,9 +16,9 @@ function Topbar() {
 
   return (
     <>
-      <div className="container mx-auto mt-6">
-        <nav className="bg-gray-100 xs:bg-white rounded-2xl xs:w-11/12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto lg:mt-6 md:mt-6 sm:mt-6 mt-0">
+        <nav className="bg-gray-100 rounded-2xl">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               <div className="flex items-center">
                 <img className="h-32 w-32" src={s3} alt="Your Company" />
@@ -46,7 +46,9 @@ function Topbar() {
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
-    
+                {/* <button className="bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg">
+                  Contact Us
+                </button> */}
                 <Link
                   to="/Contactus"
                   className={`bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}
@@ -97,7 +99,7 @@ function Topbar() {
           </div>
 
           <div
-            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-white flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5`}
+            className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"} bg-gray flex flex-col justify-between container rounded-3xl h-svh mt-2 w-11/12 ml-3.5`}
             id="mobile-menu"
           >
             <div className="px-2 pt-2 space-y-1 text-center">

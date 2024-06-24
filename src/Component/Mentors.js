@@ -19,7 +19,7 @@ function Mentors() {
 
     return (
         <div>
-            <div className="container mx-auto md:p-8">
+            <div className="container mx-auto md:p-8 lg:mt-0 mt-24">
                 <div className="text-center my-8">
                     <p className="font-clash lg:text-5xl text-4xl font-semibold text-custom-gray">
                         Our Mentors
@@ -28,9 +28,13 @@ function Mentors() {
                 <div className="flex flex-wrap justify-center pt-6 px-4">
                     {mentors.map((mentor) => (
                         <div key={mentor.id} className="w-full sm:w-1/2 md:w-1/3 p-2 text-center">
+                            <div className="sm:-mt-10 md:-mt-20 lg:mt-0">
                             <img src={mentor.image} alt={mentor.name} className="w-full h-400px rounded-40px" />
-                            <p className=" font-clash font-semibold mt-2 text-start text-2xl leading-8 pt-6">{mentor.name}</p>
-                            <p className=" font-outfit font-light text-base text-start leading-6 pt-5 pb-5">{mentor.work}</p>
+                            </div>
+                            <div className="sm:-mt-10 md:-mt-24 lg:mt-0">
+                            <p className=" font-clash font-semibold mt-2 text-start text-2xl leading-8 lg:pt-6">{mentor.name}</p>
+                            <p className=" font-outfit font-light text-base text-start leading-6 lg:pt-5 pt-2 pb-5">{mentor.work}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

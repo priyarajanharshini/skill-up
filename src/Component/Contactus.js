@@ -47,24 +47,25 @@ function Contactus() {
             </div>
             <div className="mb-6">
               <label htmlFor="query" className="font-normal block text-gray-700 text-lg mb-4">What are you looking for</label>
-              <div class="px-6 border-[#959595] border rounded-lg h-20 mt-4 gap-0 flex justify-between items-center">
+              {/* <div class="px-6 border-[#959595] border rounded-lg h-20 mt-4 gap-0 flex justify-between items-center">
                 <p class="font-clash text-xl font-medium text-gray-400 leading-7">
                   Select a query
                 </p>
                 <div>
                   <img src={Arrow} class="text-lg mt-2 text-gray-500 leading-7" />
                 </div>
-              </div>
+              </div> */}
 
-              {/* <select
+              <select
                 id="query"
-                className="w-full p-6 border-[#959595] border rounded-xl h-20 font-clash text-lg font-medium leading-7 text-gray-500"
+                className="w-full p-6 border-[#959595] border rounded-xl h-20 font-clash text-lg font-medium leading-7 text-gray-400"
               >
-                <option value=""className="">Select a query</option>
-                <option value="query1">Query 1</option>
-                <option value="query2">Query 2</option>
-                <option value="query3">Query 3</option>
-              </select> */}
+                <option value="" className="">Select a query</option>
+                <option value="query1" className="text-gray-800">Query 1</option>
+                <option value="query2" className="text-gray-800">Query 2</option>
+                <option value="query3" className="text-gray-800">Query 3</option>
+              </select>
+
             </div>
             <div className="mb-6">
               <label htmlFor="explanation" className="font-normal block text-gray-800 text-lg mb-4">Can you explain briefly?</label>
@@ -82,7 +83,7 @@ function Contactus() {
 
         </div>
       </div>
-                                 {/* Get in touch */}
+      {/* Get in touch */}
       <div class="container mx-auto -mt-8 sm:mt-0 md:mt-0 lg:-mt-12 px-4 sm:px-6 sm:py-10 md:px-8 md:py-12">
         <div class="text-center mb-0">
           <div class="text-center">
@@ -98,7 +99,7 @@ function Contactus() {
         </div>
 
         <div class="flex flex-col lg:flex-row gap-6 sm:gap-10 md:gap-10 lg:gap-10 jusify-between">
-         
+
           <div class="w-full h-96 lg:h-auto rounded-50px bg-gray-200">
             <div class="w-full h-full p-1">
               <div class="w-full h-full">
