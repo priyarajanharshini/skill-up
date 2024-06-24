@@ -37,6 +37,17 @@ function Webdevelop() {
 
     console.log("course", course);
 
+    const renderCourseNameWithColor = (courseName) => {
+        const words = courseName.split(' ');
+        const lastTwoWords = words.slice(-2).join(' ');
+        const restOfTheWords = words.slice(0, -2).join(' ');
+        return (
+            <>
+                {restOfTheWords} <span className="text-blue-600">{lastTwoWords}</span>
+            </>
+        );
+    }
+
     return (
         <>
             {Array.isArray(course) && course.map((course, index) => (
@@ -51,8 +62,7 @@ function Webdevelop() {
                     </div>
                     <div className="mt-16 text-center lg:w-7/12 w-10/12 mx-auto">
                         <p className="font-clash font-semibold text-5xl px-4 leading-tight">
-                            {course.CourseName}
-
+                            {renderCourseNameWithColor(course.CourseName)}
                         </p>
                         <p className="font-outfit font-light text-xl leading-8 text-black mt-6">
 
