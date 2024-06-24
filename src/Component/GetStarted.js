@@ -22,10 +22,10 @@ const GetStarted = () => {
     <>
       <div className="lg:mx-10 md:mx-2.5 sm:mx-5 mx-6 lg:px-6 md:px-4 sm:px-3 xs:px-1.5 px-2 xs:pt-8 sm:pt-12 md:pt-12 lg:pt-24 pt-75px  xs:pb-8 sm:pb-12 md:pb-16 lg:pb-24 pb-75px flex flex-col relative bg-black rounded-40px text-white overflow-hidden mt-50px mb-50px">
         <div className="relative flex flex-col items-center mx-0.5">
-          <h1 className="font-clash font-semibold text-2xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-center text-white xs:px-20 sm:px-8 md:px-28 lg:px-114px xl:px-40 px-32 ">
+          <h1 className="font-clash font-semibold text-3xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl text-center text-white px-4 sm:px-8 md:px-28 lg:px-114px xl:px-40">
             Make the most of your Online learning experience
           </h1>
-          <p className="font-outfit font-light leading-8 text-lg text-center text-white mt-5 px-32 sm:px-12 md:px-20 lg:px-52 xl:px-350px">
+          <p className="font-outfit font-light leading-8 text-lg text-center text-white mt-5 px-4 sm:px-12 md:px-20 lg:px-52 xl:px-350px">
             Our Online Learning Resource Centre has tips, tricks and inspiring stories to help you learn while staying home.
           </p>
           <button onClick={handleClick} className="font-clash font-semibold px-6 sm:px-8 md:px-60px py-3 sm:py-4 md:py-5 w-60 rounded-2xl bg-blue-500  mt-8">
