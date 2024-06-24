@@ -67,7 +67,7 @@ function Home() {
 
                     </div>
                     <div className="mt-12">
-                        <Link to="/Viewallglimb"className="bg-blue-500 text-white py-6 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
+                        <Link to="/course"className="bg-blue-500 text-white py-6 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
                             Get Started
                         </Link>
                     </div>

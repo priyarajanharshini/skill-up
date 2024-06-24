@@ -12,6 +12,7 @@ import javascript from '../Images/JAVASCRIPT.svg';
 import Modules from "./CourseModules";
 import Otherpopular from "./Otherpopular";
 import { useLocation } from "react-router-dom";
+import axiosInstance from "../config";
 
 function Webdevelop() {
 
@@ -24,7 +25,7 @@ function Webdevelop() {
 
 
     useEffect(() => {
-        axios.post('http://localhost:2000/get_course_by_Id', { course_Id })
+        axiosInstance.post('/get_course_by_Id', { course_Id })
             .then(response => {
                 console.log("API response:", response.data.getCourse);
                 setCourse(response.data.getCourse);
@@ -38,33 +39,35 @@ function Webdevelop() {
 
     return (
         <>
-            <div className="container mx-auto">
-                <div className="relative">
-                    <div className="absolute top-18 left-3.5 inset-y-0 lg:-top-4 lg:left-36 md:left-10 md:-top-12 sm:-top-18">
-                        <img className="w-18 h-14 sm:w-20 sm:h-14 md:w-16 md:h-16 lg:w-24 lg:h-24" src={html} alt="html" />
+            {Array.isArray(course) && course.map((course, index) => (
+                <div key={index} className="container mx-auto">
+                    <div className="relative">
+                        <div className="absolute top-18 left-3.5 inset-y-0 lg:-top-4 lg:left-36 md:left-10 md:-top-12 sm:-top-18">
+                            <img className="w-18 h-14 sm:w-20 sm:h-14 md:w-16 md:h-16 lg:w-24 lg:h-24" src={html} alt="html" />
+                        </div>
+                        <div className="absolute top-48 lg:top-48 right-4 lg:right-28 md:right-4 sm:right-4 sm:top-64">
+                            <img className="w-18 h-14 sm:w-20 sm:h-14 md:w-16 md:h-16 lg:w-24 lg:h-24" src={javascript} alt="javascript" />
+                        </div>
                     </div>
-                    <div className="absolute top-48 lg:top-48 right-4 lg:right-28 md:right-4 sm:right-4 sm:top-64">
-                        <img className="w-18 h-14 sm:w-20 sm:h-14 md:w-16 md:h-16 lg:w-24 lg:h-24" src={javascript} alt="javascript" />
+                    <div className="mt-16 text-center lg:w-7/12 w-10/12 mx-auto">
+                        <p className="font-clash font-semibold text-5xl px-4 leading-tight">
+                            {course.CourseName}
+
+                        </p>
+                        <p className="font-outfit font-light text-xl leading-8 text-black mt-6">
+
+                            {course.Objective.split('#*')[0]}
+                        </p>
+                        <div className="flex items-center justify-center mt-6">
+                            <img className="w-10 h-10 rounded-full" src={course.AuthorProfile} alt="Instructor" />
+                            <p className="ml-4 font-clash font-medium text-xl leading-6">{course.AuthorName}</p>
+                        </div>
+                        <button className="bg-blue-500 font-semibold text-xl text-white py-5 px-12 rounded-2xl mt-8 font-clash">
+                            Contact us
+                        </button>
                     </div>
-                </div>
-                <div className="mt-16 text-center lg:w-7/12 w-10/12 mx-auto">
-                    <p className="font-clash font-semibold text-5xl px-4 leading-tight">
-                        HTML, CSS, and Javascript for
-                        <span className="text-blue-600"> Web Developers </span>
-                    </p>
-                    <p className="font-outfit font-light text-xl leading-8 text-black mt-6">
-                        Prove that you can integrate HTML, CSS, and JavaScript into a website
-                    </p>
-                    <div className="flex items-center justify-center mt-6">
-                        <img className="w-10 h-10 rounded-full" src={elipse1} alt="Instructor" />
-                        <p className="ml-4 font-clash font-medium text-xl leading-6">Dan Scott</p>
-                    </div>
-                    <button className="bg-blue-500 font-semibold text-xl text-white py-5 px-12 rounded-2xl mt-8 font-clash">
-                        Contact us
-                    </button>
-                </div>
-                {Array.isArray(course) && course.map((course, index) => (
-                    <div key={index} className="flex flex-wrap justify-center mt-16 gap-8">
+
+                    <div className="flex flex-wrap justify-center mt-16 gap-8">
                         <div className="sm:flex-auto md:flex-47 lg:flex-45 w-11/12">
                             <div className="w-full h-full shadow shadow-gray-500 rounded-3xl overflow-hidden border-2 border-white bg-custom-lightgray p-10">
                                 <p className="font-clash font-semibold text-2xl">Courses Details</p>
@@ -106,14 +109,14 @@ function Webdevelop() {
                                         <p className="font-outfit font-normal text-base text-gray-500 ">Enrolled Students</p>
                                         <div className="flex items-center mt-2">
                                             <img className="w-6 h-6" src={user} alt="Enrolled Students" />
-                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">969,123</p>
+                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">{course.EnrolledStudents}</p>
                                         </div>
                                     </div>
                                     <div className="w-full">
                                         <p className="font-outfit font-normal text-base text-gray-500 ">Ratings</p>
                                         <div className="flex items-center mt-2">
                                             <img className="w-6 h-6" src={star} alt="Ratings" />
-                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">4.8<span className="text-sm font-medium"> (73,096 views)</span></p>
+                                            <p className="ml-4 font-clash font-semibold text-xl leading-none">{course.Ratings}<span className="text-sm font-medium"> ({course.TotalReviews})</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -142,13 +145,13 @@ function Webdevelop() {
                             </div>
                         </div>
                     </div>
-                ))}
 
 
-                <Modules />
-                <Otherpopular />
-            </div>
 
+                    <Modules />
+                    <Otherpopular />
+                </div>
+            ))}
 
         </>
     );
