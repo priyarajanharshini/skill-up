@@ -16,7 +16,7 @@ function Topbar() {
 
   return (
     <>
-      <div className="container mx-auto lg:mt-6 md:mt-6 sm:mt-6 mt-0">
+      <div className="container mx-auto mt-6">
         <nav className="bg-gray-100 rounded-2xl">
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
@@ -46,9 +46,6 @@ function Topbar() {
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
-                {/* <button className="bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg">
-                  Contact Us
-                </button> */}
                 <Link
                   to="/Contactus"
                   className={`bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}

@@ -32,7 +32,7 @@ function Contactus() {
               <input
                 type="text"
                 id="name"
-                className="w-full px-6 border-[#959595] border rounded-xl h-20 font-clash text-xl font-medium leading-7"
+                className="w-full px-6 border-[#959595] border rounded-xl lg:h-20 md:h-20 sm:h-20 h-16 font-clash text-xl font-medium leading-7"
                 placeholder="Enter name"
               />
             </div>
@@ -41,7 +41,7 @@ function Contactus() {
               <input
                 type="email"
                 id="email"
-                className="w-full px-6 border-[#959595] border rounded-xl h-20 font-clash text-lg font-medium leading-7"
+                className="w-full px-6 border-[#959595] border rounded-xl lg:h-20 md:h-20 sm:h-20 h-16 font-clash text-lg font-medium leading-7"
                 placeholder="Enter email address"
               />
             </div>
@@ -58,7 +58,7 @@ function Contactus() {
 
               <select
                 id="query"
-                className="w-full p-6 border-[#959595] border rounded-xl h-20 font-clash text-lg font-medium leading-7 text-gray-400"
+                className="w-full p-4 border-[#959595] border rounded-xl lg:h-20 md:h-20 sm:h-20 h-16 font-clash text-lg font-medium leading-7 text-gray-400"
               >
                 <option value="" className="">Select a query</option>
                 <option value="query1" className="text-gray-800">Query 1</option>

@@ -75,7 +75,7 @@ function Home() {
                 </div>
                 <div class="container mx-auto mt-16 sm:mt-24 md:mt-24 lg:mt-24 px-4 sm:px-6 md:px-8">
                     <div class="flex flex-wrap justify-start justify-center -mx-2">
-                        <div class="w-full flex flex-wrap justify-start -mx-2 mb-10">
+                        <div class="w-full flex flex-wrap justify-start -mx-2">
                             <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-2 mb-8">
 
                                 <div class="border border-gray-100 shadow-custom-box rounded-3xl p-0.5">
