@@ -4,7 +4,7 @@ import Fount from '../Images/Fount.svg';
 function Founder() {
     return (
         <div className="container mx-auto md:p-8">
-            <div className="text-center my-8">
+            <div className="text-center lg:my-6 sm:my-0">
                 <p className="font-clash lg:text-5xl text-4xl font-semibold text-custom-gray lg:px-0 px-4">
                     <span className="mr-4">Our</span>
                     <span className="text-blue-600">Founder’s message</span>

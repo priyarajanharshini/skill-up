@@ -5,7 +5,7 @@ import mentor3 from '../Images/mentor3.svg';
 import mentor4 from '../Images/mentor4.svg';
 import mentor5 from '../Images/mentor5.svg';
 import mentor6 from '../Images/mentor6.svg';
-
+import Fount from '../Images/Fount.svg';
 
 function Mentors() {
     const mentors = [
@@ -19,25 +19,26 @@ function Mentors() {
 
     return (
         <div>
-            <div className="container mx-auto md:p-8 lg:mt-0 mt-24">
-                <div className="text-center my-8">
+            <div className="container mx-auto md:p-8 lg:mt-0 lg:mt-18">
+                <div className="text-center lg:my-8 sm:my-5 ">
                     <p className="font-clash lg:text-5xl text-4xl font-semibold text-custom-gray">
                         Our Mentors
                     </p>
                 </div>
-                <div className="flex flex-wrap justify-center pt-6 px-4">
+                <div className="flex flex-wrap justify-center pt-6 px-4 w-full lg:w-full">
                     {mentors.map((mentor) => (
                         <div key={mentor.id} className="w-full sm:w-1/2 md:w-1/3 p-2 text-center">
-                            <div className="sm:-mt-10 md:-mt-20 lg:mt-0">
-                            <img src={mentor.image} alt={mentor.name} className="w-full h-400px rounded-40px" />
+                            <div className="flex justify-center w-full ">
+                                <img src={mentor.image} alt={mentor.name} className="w-full h-full " />
                             </div>
-                            <div className="sm:-mt-10 md:-mt-24 lg:mt-0">
-                            <p className=" font-clash font-semibold mt-2 text-start text-2xl leading-8 lg:pt-6">{mentor.name}</p>
-                            <p className=" font-outfit font-light text-base text-start leading-6 lg:pt-5 pt-2 pb-5">{mentor.work}</p>
+                            <div className="">
+                                <p className="font-clash font-semibold mt-2 text-start text-2xl leading-8 lg:pt-6">{mentor.name}</p>
+                                <p className="font-outfit font-light text-base text-start leading-6 lg:pt-5 pt-2 pb-5">{mentor.work}</p>
                             </div>
                         </div>
                     ))}
                 </div>
+
             </div>
         </div>
     );
