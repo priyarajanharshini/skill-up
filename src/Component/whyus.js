@@ -90,7 +90,7 @@ function WhyUs() {
 
     return (
         <div className="container mx-auto px-4 font-clash">
-            <div className="text-center mb-8 mt-12">
+            <div className="text-center mb-8 mt-8">
                 <label className="font-semibold text-4xl sm:text-5xl md:text-6xl leading-10">
                     Why <span className="text-blue-600">us</span>?
                 </label>
