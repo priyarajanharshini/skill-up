@@ -12,7 +12,10 @@ function Footer() {
         <div className="md:flex md:justify-between  sm:flex sm:justify-between">
 
           <div className="mb-6 md:mb-0">
-            <img src={Logo} alt="Logo" className="self-center w-auto h-9 text-white" />
+            <div className="flex items-center space-x-2">
+              <img src={Logo} alt="Logo" className="w-auto h-9" />
+              <span className="text-white text-4xl font-semibold font-clash">S3 SkillUp</span>
+            </div>
 
             <div className="text-white pt-4 font-outfit text-base font-light leading-6 ">
               <span className="sm:hidden">
