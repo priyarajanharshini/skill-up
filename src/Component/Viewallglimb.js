@@ -38,7 +38,7 @@ function Viewall() {
 
   return (
     <>
-      <div className="mt-10">
+      <div className="mt-20">
         <h3 className="text-center font-clash font-semibold text-5xl">
           Our <span className="text-blue-600 clash">Popular Courses</span>
         </h3>

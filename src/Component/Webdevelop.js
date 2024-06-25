@@ -51,7 +51,7 @@ function Webdevelop() {
     return (
         <>
             {Array.isArray(course) && course.map((course, index) => (
-                <div key={index} className="container mx-auto">
+                <div key={index} className="container mx-auto mt-20">
                     <div className="relative">
                         <div className="absolute top-18 left-3.5 inset-y-0 lg:-top-4 lg:left-36 md:left-10 md:-top-12 sm:-top-18">
                             <img className="w-18 h-14 sm:w-20 sm:h-14 md:w-16 md:h-16 lg:w-24 lg:h-24" src={html} alt="html" />
@@ -74,7 +74,7 @@ function Webdevelop() {
                         </div>
                         <div className="flex justify-center mt-8 ">
             <Link to="/Contactus" className="bg-blue-500 text-white py-5 px-14 rounded-2xl font-clash leading-7 text-xl font-semibold">
-              Contactus
+              Contact us
             </Link>
           </div>
                     </div>
