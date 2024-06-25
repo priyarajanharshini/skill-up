@@ -65,13 +65,13 @@ function Otherpopular({ courseId }) {
 
   return (
     <>
-      <div className="mt-14">
+      <div className="mt-20">
         <p className="text-center font-clash font-semibold text-5xl">
           Other  <span className="text-blue-600"> Popular Courses</span>
         </p>
       </div>
       <div className="lg:block md:block sm:hidden hidden">
-        <div className="lg:px-10  flex flex-wrap mt-10 m-0 gap-y-20px">
+        <div className="lg:px-10  flex flex-wrap mt-10 mb-24  gap-y-20px">
           {Array.isArray(courses) && courses.map((course, index) => (
             <div key={index} className="sm:flex-100 md:flex-50 lg:flex-1">
               <div className="shadow-xl rounded-3xl overflow-hidden border-2 border-white h-full p-4 m-4 bg-custom-lightgray">

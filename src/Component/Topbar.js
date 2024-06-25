@@ -46,9 +46,10 @@ function Topbar() {
                 </div>
               </div>
               <div className="hidden sm:flex sm:items-center sm:justify-end">
+               
                 <Link
                   to="/Contactus"
-                  className={`bg-blue-500 text-white text-base font-normal py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}
+                  className={`bg-blue-500 text-white text-base font-normal font-clash py-3 px-4 rounded-lg ${getLinkClass('/Contactus')}`}
                 >
                   Contact Us
                 </Link>
@@ -120,9 +121,15 @@ function Topbar() {
                 About
               </Link>
             </div>
-            <button className="bg-blue-500 text-white mb-28 font-bold py-2 rounded mx-2">
+            {/* <button className="bg-blue-500 text-white mb-28 font-bold py-2 rounded mx-2">
               Contact Us
-            </button>
+            </button> */}
+            <Link
+                  to="/Contactus"
+                  className={`bg-blue-500 text-white text-center font-clash mb-28 font-bold py-2 rounded mx-2 ${getLinkClass('/Contactus')}`}
+                >
+                  Contact Us
+                </Link>
           </div>
         </nav>
       </div>

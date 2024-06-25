@@ -80,7 +80,7 @@ function Glimb() {
   return (
     <>
      
-          <div className="mt-14">
+          <div className="mt-20">
             <h3 className="text-center font-clash font-semibold text-5xl">
               A glimpse on <span className="text-blue-600 block mt-3 clash">what we offer</span>
             </h3>
