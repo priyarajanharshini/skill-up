@@ -1,6 +1,5 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import Arrow from '../Icons/Arrow.svg';
 import buildings from '../Icons/buildings.svg';
 import sms from '../Icons/sms.svg';
 import call from '../Icons/call.svg';
@@ -71,24 +70,24 @@ function Contactus() {
               <label htmlFor="explanation" className="font-normal block text-gray-800 text-lg mb-4">Can you explain briefly?</label>
               <textarea
                 id="explanation"
-                className="w-full p-8 border-[#959595] border rounded-xl h-48 font-clash text-lg font-medium leading-7 text-gray-500 py-8"
+                className="w-full p-8 border-[#959595] border rounded-xl h-48 font-clash text-lg font-medium leading-7 text-gray-500 py-10"
                 placeholder="Explain briefly..."
               ></textarea>
             </div>
 
             <div class="mt-8 pb-24">
-              <button class="bg-blue-500 w-full h-20 rounded-xl text-white font-semibold text-xl"> Send your query</button>
+              <button class="bg-blue-500 w-full h-20 rounded-xl text-white font-semibold text-xl font-clash"> Send your query</button>
             </div>
           </form>
 
         </div>
       </div>
-      {/* Get in touch */}
+                                            
       <div class="container mx-auto -mt-8 sm:mt-0 md:mt-0 lg:-mt-12 px-4 sm:px-6 sm:py-10 md:px-8 md:py-12">
         <div class="text-center mb-0">
           <div class="text-center">
             <label class="font-clash font-semibold text-4xl sm:text-5xl md:text-6xl leading-10">
-              Get in touch<span class="text-blue-600 tracking-tighter"> with us!</span>
+              Get in touch<span class="text-blue-600"> with us!</span>
             </label>
             <div class="font-thin leading-8 h-16 font-outfit font-normal leading-8 mt-4 sm:mt-12 md:mt-12 lg:mt-8 mb-8 sm:mb-0 md:mb-0 lg:mb-0">
               <p class="text-slate-800 text-lg tracking-wider">Need support or have a question about your career? We’re here to help.</p>
