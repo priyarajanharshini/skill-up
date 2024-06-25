@@ -13,11 +13,12 @@ function Topbar() {
   const getLinkClass = (path) => {
     return location.pathname === path ? 'text-blue-500' : 'text-black';
   };
+  
 
   return (
     <>
       <div className="container mx-auto mt-6">
-        <nav className="bg-gray-100 rounded-2xl">
+        <nav className="bg-gray-100 rounded-2xl lg:w-full w-11/12 mx-auto">
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               <div className="flex items-center">
@@ -121,9 +122,7 @@ function Topbar() {
                 About
               </Link>
             </div>
-            {/* <button className="bg-blue-500 text-white mb-28 font-bold py-2 rounded mx-2">
-              Contact Us
-            </button> */}
+          
             <Link
                   to="/Contactus"
                   className={`bg-blue-500 text-white text-center font-clash mb-28 font-bold py-2 rounded mx-2 ${getLinkClass('/Contactus')}`}
