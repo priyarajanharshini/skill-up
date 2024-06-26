@@ -51,7 +51,7 @@ function Glimb() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axiosInstance.get('http://localhost:2000/get/get-course')
+    axiosInstance.get('/get/get-course')
       .then(response => {
         console.log("API response:", response.data.getCourse);
         if (Array.isArray(response.data.getCourse)) {
