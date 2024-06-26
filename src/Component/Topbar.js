@@ -14,7 +14,9 @@ function Topbar() {
     return location.pathname === path ? 'text-blue-500' : 'text-black';
   };
   
-
+  const handleMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
+  };
   return (
     <>
       <div className="container mx-auto mt-6">
@@ -102,20 +104,20 @@ function Topbar() {
             id="mobile-menu"
           >
             <div className="px-2 pt-2 space-y-1 text-center">
-              <Link
+              <Link onClick={handleMenuItemClick}
                 to="/"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/')}`}
               >
                 Home
               </Link>
-              <Link
+              <Link onClick={handleMenuItemClick}
                 to="/course"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/course')}`}
               >
                 Courses
               </Link>
-              <hr />
-              <Link
+              {/* <hr /> */}
+              <Link onClick={handleMenuItemClick}
                 to="/about"
                 className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass('/about')}`}
               >
@@ -123,7 +125,7 @@ function Topbar() {
               </Link>
             </div>
           
-            <Link
+            <Link onClick={handleMenuItemClick}
                   to="/Contactus"
                   className={`bg-blue-500 text-white text-center font-clash mb-28 font-bold py-2 rounded mx-2 ${getLinkClass('/Contactus')}`}
                 >
